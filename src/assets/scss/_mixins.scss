@@ -1,0 +1,61 @@
+@use "sass:map";
+
+$screen-sizes: (
+    "mobile": 720px,
+    "tablet": 1280px,
+    "desktop": 1440px,
+);
+
+@mixin respond-to($size) {
+    @media (max-width: map.get($screen-sizes, $size)) {
+        @content;
+    }
+}
+
+@mixin text($text-type) {
+    @if $text-type == 'h1' {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+    } @else if $text-type == 'h2' {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: normal;
+    } @else if $text-type == 't1' {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: bold;
+    } @else if $text-type == 't2' {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold;
+    } @else if $text-type == 'p1' {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: normal;
+    } @else if $text-type == 'p2' {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold;
+    } @else if $text-type == 'p3' {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+    } @else if $text-type == 'p3-b' {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+    }@else if $text-type == 'p4' {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+    } @else if $text-type == 'l1' {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: normal;
+    } @else if $text-type == 'l2' {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: normal;
+    }
+}

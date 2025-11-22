@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @include respond-to(mobile) {
+        padding: 0 20px;
+    }
+}
