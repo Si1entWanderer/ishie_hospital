@@ -1,29 +1,23 @@
 <script setup lang="ts">
-import { EIcons } from '@/assets/ts/enums';
+import { EIcons } from '@/assets/ts/enums'
 
 const emit = defineEmits<{
-    clickPrev: [],
-    clickNext: [],
+    clickPrev: []
+    clickNext: []
 }>()
 </script>
 
 <template>
     <div :class="$style.VNavigation">
-        <button
-            :class="[$style.button, $style._prev]"
-            @click="emit('clickPrev')"
-        >
+        <button :class="[$style.button, $style._prev]" @click="emit('clickPrev')">
             <svg :class="$style.icon">
-                <use :xlink:href="EIcons.arrowBackAlt"/>
+                <use :xlink:href="EIcons.arrowBackAlt" />
             </svg>
         </button>
 
-        <button
-            :class="[$style.button, $style._next]"
-            @click="emit('clickNext')"
-        >
+        <button :class="[$style.button, $style._next]" @click="emit('clickNext')">
             <svg :class="$style.icon">
-                <use :xlink:href="EIcons.arrowForwardAlt"/>
+                <use :xlink:href="EIcons.arrowForwardAlt" />
             </svg>
         </button>
     </div>
@@ -43,7 +37,7 @@ const emit = defineEmits<{
     color: $dark-0;
     font-size: 0;
     cursor: pointer;
-    transition: .3s transform;
+    transition: 0.3s transform;
 
     &:hover {
         transform: scale(1.05);

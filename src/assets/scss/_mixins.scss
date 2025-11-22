@@ -1,9 +1,9 @@
-@use "sass:map";
+@use 'sass:map';
 
 $screen-sizes: (
-    "mobile": 720px,
-    "tablet": 1280px,
-    "desktop": 1440px,
+    'mobile': 720px,
+    'tablet': 1280px,
+    'desktop': 1440px,
 );
 
 @mixin respond-to($size) {
@@ -45,7 +45,7 @@ $screen-sizes: (
         font-size: 16px;
         line-height: 20px;
         font-weight: bold;
-    }@else if $text-type == 'p4' {
+    } @else if $text-type == 'p4' {
         font-size: 14px;
         line-height: 20px;
         font-weight: normal;

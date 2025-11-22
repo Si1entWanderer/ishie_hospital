@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router';
+import { RouterLink } from 'vue-router'
 
-import PATIENTS from '@/assets/ts/patients';
+import PATIENTS from '@/assets/ts/patients'
 
-import BlockWrapper from '@/components/common/BlockWrapper.vue';
+import BlockWrapper from '@/components/common/BlockWrapper.vue'
 
-const TITLE = 'СПИСОК ПАЦИЕНТОВ';
+const TITLE = 'СПИСОК ПАЦИЕНТОВ'
 </script>
 
 <template>
@@ -15,15 +15,8 @@ const TITLE = 'СПИСОК ПАЦИЕНТОВ';
         </h2>
 
         <ul :class="$style.list">
-            <li
-                v-for="patient in PATIENTS"
-                :class="$style.item"
-                :key="patient.id"
-            >
-                <RouterLink
-                    :to="`/patients/${patient.id}`"
-                    :class="$style.link"
-                >
+            <li v-for="patient in PATIENTS" :class="$style.item" :key="patient.id">
+                <RouterLink :to="`/patients/${patient.id}`" :class="$style.link">
                     {{ patient.name }}&nbsp;&rarr;
                 </RouterLink>
             </li>
@@ -77,7 +70,7 @@ const TITLE = 'СПИСОК ПАЦИЕНТОВ';
     border-radius: 24px;
     text-decoration: none;
     color: $dark-0;
-    transition: .3s transform;
+    transition: 0.3s transform;
 
     &:hover {
         transform: scale(1.05);

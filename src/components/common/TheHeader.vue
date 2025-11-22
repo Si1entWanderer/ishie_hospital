@@ -1,34 +1,34 @@
 <script setup lang="ts">
-import { EIcons } from '@/assets/ts/enums';
+import { EIcons } from '@/assets/ts/enums'
 
-import SocialLinks from '@/components/social/SocialLinks.vue';
+import SocialLinks from '@/components/social/SocialLinks.vue'
 
-const CLINIC_NAME = 'ГБУЗ «Больница имени Иши»';
-const CLINIC_DESCRIPTION = 'Лечебное профилактическое учреждение';
+const CLINIC_NAME = 'ГБУЗ «Больница имени Иши»'
+const CLINIC_DESCRIPTION = 'Лечебное профилактическое учреждение'
 </script>
 
 <template>
-<div :class="$style.TheHeader">
-    <div :class="[$style.container, 'container']">
-        <div :class="$style.heading">
-            <svg :class="$style.logo">
-                <use :xlink:href="EIcons.logo"/>
-            </svg>
+    <div :class="$style.TheHeader">
+        <div :class="[$style.container, 'container']">
+            <div :class="$style.heading">
+                <svg :class="$style.logo">
+                    <use :xlink:href="EIcons.logo" />
+                </svg>
 
-            <div :class="$style.clinic">
-                <h1 :class="$style.clinicName">
-                    {{ CLINIC_NAME }}
-                </h1>
+                <div :class="$style.clinic">
+                    <h1 :class="$style.clinicName">
+                        {{ CLINIC_NAME }}
+                    </h1>
 
-                <p :class="$style.clinicDescription">
-                    {{ CLINIC_DESCRIPTION }}
-                </p>
+                    <p :class="$style.clinicDescription">
+                        {{ CLINIC_DESCRIPTION }}
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <SocialLinks :class="$style.socials"/>
+            <SocialLinks :class="$style.socials" />
+        </div>
     </div>
-</div>
 </template>
 
 <style lang="scss" module>

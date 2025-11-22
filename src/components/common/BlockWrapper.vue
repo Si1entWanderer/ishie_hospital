@@ -1,9 +1,8 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
     <div :class="$style.BlockWrapper">
-        <slot/>
+        <slot />
     </div>
 </template>
 

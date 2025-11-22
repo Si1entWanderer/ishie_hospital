@@ -1,9 +1,8 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
     <button :class="$style.VButton">
-        <slot/>
+        <slot />
     </button>
 </template>
 
@@ -17,7 +16,7 @@
     background-color: white;
     color: $dark-0;
     cursor: pointer;
-    transition: .3s transform;
+    transition: 0.3s transform;
 
     @include text(p3);
 

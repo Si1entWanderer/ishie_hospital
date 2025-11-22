@@ -1,23 +1,22 @@
 <script setup lang="ts">
-import TheHeader from '@/components/common/TheHeader.vue';
-import SocialLinks from '@/components/social/SocialLinks.vue';
-
+import TheHeader from '@/components/common/TheHeader.vue'
+import SocialLinks from '@/components/social/SocialLinks.vue'
 </script>
 
 <template>
-<div :class="$style.MainLayout">
-    <header :class="$style.header">
-        <TheHeader/>
-    </header>
+    <div :class="$style.MainLayout">
+        <header :class="$style.header">
+            <TheHeader />
+        </header>
 
-    <main :class="$style.content">
-        <slot/>
-    </main>
+        <main :class="$style.content">
+            <slot />
+        </main>
 
-    <div :class="$style.links">
-        <SocialLinks/>
+        <div :class="$style.links">
+            <SocialLinks />
+        </div>
     </div>
-</div>
 </template>
 
 <style lang="scss" module>

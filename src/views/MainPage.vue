@@ -1,16 +1,15 @@
 <script setup lang="ts">
-import FaqBlock from '@/components/hospital/FaqBlock.vue';
-import PatientListBlock from '@/components/hospital/PatientListBlock.vue';
-import MainLayout from '@/layouts/MainLayout.vue';
-
+import FaqBlock from '@/components/hospital/FaqBlock.vue'
+import PatientListBlock from '@/components/hospital/PatientListBlock.vue'
+import MainLayout from '@/layouts/MainLayout.vue'
 </script>
 
 <template>
     <MainLayout :class="$style.MainPage">
         <div :class="[$style.container, 'contianer']">
-            <PatientListBlock/>
+            <PatientListBlock />
 
-            <FaqBlock/>
+            <FaqBlock />
         </div>
     </MainLayout>
 </template>

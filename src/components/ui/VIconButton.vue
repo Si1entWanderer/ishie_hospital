@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { EIcons } from '@/assets/ts/enums';
+import { EIcons } from '@/assets/ts/enums'
 
 defineProps<{
-    icon: EIcons,
+    icon: EIcons
 }>()
 </script>
 
 <template>
     <button :class="$style.VIconButton">
         <svg :class="$style.icon">
-            <use :xlink:href="icon"/>
+            <use :xlink:href="icon" />
         </svg>
     </button>
 </template>
@@ -26,7 +26,7 @@ defineProps<{
     background-color: white;
     color: $dark-0;
     cursor: pointer;
-    transition: .3s transform;
+    transition: 0.3s transform;
 
     &:hover {
         transform: scale(1.05);

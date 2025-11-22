@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from 'vue'
 
-import type { TPatient } from '@/@types/patient';
-import { EIcons } from '@/assets/ts/enums';
+import type { TPatient } from '@/@types/patient'
+import { EIcons } from '@/assets/ts/enums'
 
-import BlockWrapper from '@/components/common/BlockWrapper.vue';
-import TextBlock from '@/components/common/TextBlock.vue';
+import BlockWrapper from '@/components/common/BlockWrapper.vue'
+import TextBlock from '@/components/common/TextBlock.vue'
 
-const IMAGE_ALT = 'фото пациента';
+const IMAGE_ALT = 'фото пациента'
 const LABELS = {
     NAME: 'Имя',
     SEX: 'Пол',
@@ -16,10 +16,10 @@ const LABELS = {
 }
 
 const props = defineProps<{
-    patient: TPatient,
+    patient: TPatient
 }>()
 
-const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕНТА №${props.patient?.id}`);
+const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕНТА №${props.patient?.id}`)
 </script>
 
 <template>
@@ -38,7 +38,7 @@ const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕ
                 />
 
                 <svg :class="$style.patch">
-                    <use :xlink:href="EIcons.heart"/>
+                    <use :xlink:href="EIcons.heart" />
                 </svg>
             </div>
 
@@ -84,11 +84,7 @@ const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕ
         </div>
 
         <div :class="$style.content">
-            <TextBlock
-                v-for="text in patient?.examination"
-                :key="text.id"
-                :data="text"
-            />
+            <TextBlock v-for="text in patient?.examination" :key="text.id" :data="text" />
         </div>
     </BlockWrapper>
 </template>
@@ -203,7 +199,7 @@ const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕ
     @include text(l1);
 
     @include respond-to(mobile) {
-        @include text(l2)
+        @include text(l2);
     }
 }
 

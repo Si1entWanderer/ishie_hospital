@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import TheSprite from '@/components/common/TheSprite.vue';
-
+import TheSprite from '@/components/common/TheSprite.vue'
 </script>
 
 <template>
-    <TheSprite/>
+    <TheSprite />
     <RouterView />
 </template>
 
