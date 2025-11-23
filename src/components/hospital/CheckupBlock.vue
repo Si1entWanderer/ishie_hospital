@@ -100,6 +100,11 @@ function onInput(event: Event) {
     display: flex;
     justify-content: flex-start;
     gap: 12px;
+
+    @include respond-to(mobile) {
+        grid-column: span 1;
+        flex-direction: column;
+    }
 }
 
 .label {
