@@ -4,13 +4,13 @@ import { computed } from 'vue'
 import type { TPatient } from '@/@types/patient'
 import { EIcons } from '@/assets/ts/enums'
 
-import SEAL_IMAGE from '@/assets/images/seal.png';
+import SEAL_IMAGE from '@/assets/images/seal.png'
 
 import BlockWrapper from '@/components/common/BlockWrapper.vue'
 import TextBlock from '@/components/common/TextBlock.vue'
 
-const PATIENT_IMAGE_ALT = 'фото пациента';
-const SEAL_IMAGE_ALT = 'шуточная печать';
+const PATIENT_IMAGE_ALT = 'фото пациента'
+const SEAL_IMAGE_ALT = 'шуточная печать'
 
 const LABELS = {
     NAME: 'Имя',
@@ -91,11 +91,7 @@ const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕ
             <TextBlock v-for="text in patient?.examination" :key="text.id" :data="text" />
         </div>
 
-        <img
-            :class="$style.seal"
-            :src="SEAL_IMAGE"
-            :alt="SEAL_IMAGE_ALT"
-        />
+        <img :class="$style.seal" :src="SEAL_IMAGE" :alt="SEAL_IMAGE_ALT" />
     </BlockWrapper>
 </template>
 
@@ -232,7 +228,7 @@ const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕ
     right: 40px;
     width: 200px;
     height: 200px;
-    opacity: .8;
+    opacity: 0.8;
 
     @media print {
         display: block;

@@ -4,6 +4,7 @@ import { EIcons } from '@/assets/ts/enums'
 import SocialLinks from '@/components/social/SocialLinks.vue'
 
 const CLINIC_NAME = 'РБ(О)У «Клиника имени Иши_j»'
+const CLINIC_TITLE = 'Рофельное бюджетное(очень) учреждение «Клиника имени Иши_j»'
 const CLINIC_DESCRIPTION = 'Лечебное профилактическое учреждение'
 </script>
 
@@ -16,7 +17,7 @@ const CLINIC_DESCRIPTION = 'Лечебное профилактическое у
                 </svg>
 
                 <div :class="$style.clinic">
-                    <h1 :class="$style.clinicName">
+                    <h1 :class="$style.clinicName" :title="CLINIC_TITLE">
                         {{ CLINIC_NAME }}
                     </h1>
 
@@ -66,6 +67,7 @@ const CLINIC_DESCRIPTION = 'Лечебное профилактическое у
 .clinicName {
     margin: 0;
     color: $dark-0;
+    cursor: help;
 
     @include text(h1);
 }
@@ -73,6 +75,7 @@ const CLINIC_DESCRIPTION = 'Лечебное профилактическое у
 .clinicDescription {
     margin: 0;
     color: $dark-0;
+    cursor: default;
 
     @include text(h2);
 }
