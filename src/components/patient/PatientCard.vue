@@ -4,10 +4,14 @@ import { computed } from 'vue'
 import type { TPatient } from '@/@types/patient'
 import { EIcons } from '@/assets/ts/enums'
 
+import SEAL_IMAGE from '@/assets/images/seal.png';
+
 import BlockWrapper from '@/components/common/BlockWrapper.vue'
 import TextBlock from '@/components/common/TextBlock.vue'
 
-const IMAGE_ALT = 'фото пациента'
+const PATIENT_IMAGE_ALT = 'фото пациента';
+const SEAL_IMAGE_ALT = 'шуточная печать';
+
 const LABELS = {
     NAME: 'Имя',
     SEX: 'Пол',
@@ -34,7 +38,7 @@ const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕ
                     :key="patient.id"
                     :class="$style.image"
                     :src="patient?.image"
-                    :alt="IMAGE_ALT"
+                    :alt="PATIENT_IMAGE_ALT"
                 />
 
                 <svg :class="$style.patch">
@@ -86,11 +90,18 @@ const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕ
         <div :class="$style.content">
             <TextBlock v-for="text in patient?.examination" :key="text.id" :data="text" />
         </div>
+
+        <img
+            :class="$style.seal"
+            :src="SEAL_IMAGE"
+            :alt="SEAL_IMAGE_ALT"
+        />
     </BlockWrapper>
 </template>
 
 <style lang="scss" module>
 .PatientCard {
+    position: relative;
     display: flex;
     overflow: hidden;
 
@@ -211,6 +222,28 @@ const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕ
 
     @include respond-to(mobile) {
         @include text(p3-b);
+    }
+}
+
+.seal {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 200px;
+    height: 200px;
+    opacity: .8;
+
+    @media print {
+        display: block;
+    }
+
+    @include respond-to(mobile) {
+        @media print {
+            right: unset;
+            left: 35%;
+            transform: translateX(-50%);
+        }
     }
 }
 </style>
