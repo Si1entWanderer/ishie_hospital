@@ -1,29 +1,27 @@
 import type { TPatient } from '@/@types/patient'
 import { ESex } from '@/assets/ts/enums'
 
-import iisusAvatar from '@/assets/images/avatars/iisus.jpg'
+import placeholder from '@/assets/images/avatars/placeholder.jpg'
 
-export const patientIisus: TPatient = {
-    id: '43434',
-    name: 'iisus_0001_j',
-    image: iisusAvatar,
+export const patientAlyooha: TPatient = {
+    id: '94108',
+    name: 'alyooha',
+    image: placeholder,
     sex: ESex.male,
-    birthDate: '9.01.2025',
+    birthDate: '11.05.2023',
     residentalAddress: 'Twitch канал Ishie_j',
     examination: [
         {
             id: 1,
             title: '❤️‍🔥 I.Возраст сердечка',
             description: `
-                <p>Хронический сердецежитель</p>
+                <p>VIP: Любимый Гей</p>
             `,
         },
         {
             id: 2,
             title: '💗 II. Основной диагноз',
             description:`
-                <p>Синдром переполненного сердечка</p>
-                <p>Синдром «гига гея» (аниме форма)</p>
                 <p>Недостаток обнимашек</p>
             `,
         },
@@ -31,7 +29,7 @@ export const patientIisus: TPatient = {
             id: 3,
             title: '✨ III. Группа риска',
             description: `
-                <p>ПМЛ — Постоянно Мило Любящий</p>
+                <p>СНС — Скромный Но Симпатичный</p>
         `,
         },
         {
@@ -39,8 +37,7 @@ export const patientIisus: TPatient = {
             title: '🌸 IV. Симптомы, замеченные врачом',
             description: `
                 <ol>
-                    <li>Спонтанные «аааа» и «я гей»</li>
-                    <li>Приступная активность в чате</li>
+                    <li>Хроническое пребывание в стриме</li>
                 </ol>
             `,
         },
@@ -49,8 +46,8 @@ export const patientIisus: TPatient = {
             title: '💉 V. Назначения врача',
             description: `
                 <ol>
-                    <li>Похвалить врача</li>
-                    <li>Провести терапию «понюхать ножки»</li>
+                    <li>Выписать одну (1) улыбку ❤️</li>
+                    <li>Отдохнуть и попить воды</li>
                     <li>Продлить курс таблеток от ишемии</li>
                 </ol>
             `,
@@ -59,7 +56,7 @@ export const patientIisus: TPatient = {
             id: 6,
             title: '💞 VI. Уровень сердечной нагрузки',
             description: `
-                <p>Уровень MAX — Бьется Даже На Парковке</p>
+                <p>Уровень 2 — Розовое Сердцебиение</p>
             `,
         },
     ],

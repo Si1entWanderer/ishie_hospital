@@ -1,4 +1,4 @@
-import { patientMisaki } from '@/assets/ts/patients/patientMisaki'
 import { patientIisus } from '@/assets/ts/patients/patientIisus'
+import { patientAlyooha } from '@/assets/ts/patients/patientAlyooha'
 
-export default [patientMisaki, patientIisus]
+export default [patientAlyooha, patientIisus]

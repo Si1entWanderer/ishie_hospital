@@ -225,7 +225,7 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
             },
             {
                 pk: '6',
-                label: 'Уровень MAX — Пациент Моего Сердца',
+                label: 'Уровень MAX — Бьется Даже На Парковке',
             },
         ],
     },
