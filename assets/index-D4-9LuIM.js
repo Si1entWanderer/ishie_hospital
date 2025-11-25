@@ -37,7 +37,7 @@
                 </ol>
             `},{id:6,title:"💞 VI. Уровень сердечной нагрузки",description:`
                 <p>Уровень MAX — Бьется Даже На Парковке</p>
-            `}]},$u="/assets/pitaHavus-Bnu1sGwx.jpg",Ou={id:"83578",name:"pitaHavus_j",image:$u,sex:Kn.male,birthDate:"30.03.2023",residentalAddress:"Twitch канал Ishie_j",examination:[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
+            `}]},$u="/assets/pitaHavus-Bnu1sGwx.jpg",Ou={id:"83578",name:"pitaHavus_j",image:$u,sex:Kn.male,birthDate:"30.03.2025",residentalAddress:"Twitch канал Ishie_j",examination:[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
                 <p>VIP: Любимый Гей</p>
             `},{id:2,title:"💗 II. Основной диагноз",description:`
                 <p>Ишемия нежности (в ремиссии)</p>
