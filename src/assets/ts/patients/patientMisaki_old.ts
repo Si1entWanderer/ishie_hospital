@@ -4,7 +4,7 @@ import { ESex } from '@/assets/ts/enums'
 import misakiAvatar from '@/assets/images/avatars/misaki.png'
 
 export const patientMisaki: TPatient = {
-    id: '000030',
+    id: '00030',
     name: 'misaki_30cm_j',
     image: misakiAvatar,
     sex: ESex.male,
