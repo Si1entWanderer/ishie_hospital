@@ -8,7 +8,7 @@ export const patientPitaHavus: TPatient = {
     name: 'pitaHavus_j',
     image: pitaHavusAvatar,
     sex: ESex.male,
-    birthDate: '30.03.2023',
+    birthDate: '30.03.2025',
     residentalAddress: 'Twitch канал Ishie_j',
     examination: [
         {
