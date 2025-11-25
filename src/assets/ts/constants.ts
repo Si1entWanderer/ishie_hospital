@@ -101,7 +101,7 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
             },
             {
                 pk: '10',
-                label: 'Приступное смущение',
+                label: 'Ты пися',
             },
         ],
     },
@@ -128,6 +128,14 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
             {
                 pk: '5',
                 label: 'СНС — Скромный Но Симпатичный',
+            },
+            {
+                pk: '6',
+                label: 'СБЧ — Слишком Большой Член',
+            },
+            {
+                pk: '7',
+                label: 'ГМГ- Гига Мега Гей',
             },
         ],
     },
@@ -163,6 +171,14 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
                 pk: '7',
                 label: 'Хроническое пребывание в стриме',
             },
+            {
+                pk: '8',
+                label: 'Большой член в попе',
+            },
+            {
+                pk: '9',
+                label: 'Донатная девственность',
+            },
         ],
     },
     {
@@ -196,6 +212,10 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
             {
                 pk: '7',
                 label: ' Продлить курс таблеток от ишемии',
+            },
+            {
+                pk: '8',
+                label: 'Вернуть деньги Мисаки вместо врача',
             },
         ],
     },
