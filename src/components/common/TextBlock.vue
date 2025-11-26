@@ -44,6 +44,10 @@ withDefaults(
     @include respond-to(mobile) {
         @include text(t2);
     }
+
+    @media print {
+        @include text(p3-b);
+    }
 }
 
 .description {
@@ -53,6 +57,10 @@ withDefaults(
 
     @include respond-to(mobile) {
         @include text(p3);
+    }
+
+    @media print {
+        @include text(p4);
     }
 }
 </style>

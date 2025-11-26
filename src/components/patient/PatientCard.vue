@@ -145,6 +145,10 @@ const activeTitle = computed(() => `МЕДИЦИНСКАЯ КАРТА ПАЦИЕ
         gap: 24px;
     }
 
+    @media print {
+        gap: 12px;
+    }
+
     :global {
         ol {
             padding-left: 24px;

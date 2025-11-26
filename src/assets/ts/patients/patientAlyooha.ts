@@ -21,7 +21,7 @@ export const patientAlyooha: TPatient = {
         {
             id: 2,
             title: '💗 II. Основной диагноз',
-            description:`
+            description: `
                 <p>Недостаток обнимашек</p>
             `,
         },

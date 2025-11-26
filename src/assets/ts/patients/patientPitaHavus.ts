@@ -21,7 +21,7 @@ export const patientPitaHavus: TPatient = {
         {
             id: 2,
             title: '💗 II. Основной диагноз',
-            description:`
+            description: `
                 <p>Ишемия нежности (в ремиссии)</p>
                 <p>Лихорадка натурала</p>
             `,

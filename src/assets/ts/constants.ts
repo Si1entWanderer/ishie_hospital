@@ -211,7 +211,7 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
             },
             {
                 pk: '7',
-                label: ' Продлить курс таблеток от ишемии',
+                label: 'Продлить курс таблеток от ишемии',
             },
             {
                 pk: '8',
