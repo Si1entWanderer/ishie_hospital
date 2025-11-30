@@ -9,4 +9,5 @@ export type TPatient = {
     birthDate?: string
     residentalAddress?: string
     examination?: TTextBlock[]
+    examinations?: TTextBlock[][]
 }

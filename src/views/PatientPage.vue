@@ -44,7 +44,9 @@ function onClickPrev() {
                 @click-prev="onClickPrev"
             />
 
-            <PatientCard :patient="activePatient" />
+            <Transition name="fade" mode="out-in">
+                <PatientCard :key="activePatient.id" :patient="activePatient" />
+            </Transition>
         </div>
     </MainLayout>
 </template>
@@ -57,7 +59,7 @@ function onClickPrev() {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 60px;
 
     @include respond-to(mobile) {
         gap: 12px;
