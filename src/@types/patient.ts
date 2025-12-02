@@ -1,5 +1,5 @@
 import type { TTextBlock } from '@/@types/blocks'
-import { ESex } from '@/assets/ts/enums'
+import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
 
 export type TPatient = {
     id: string
@@ -10,4 +10,12 @@ export type TPatient = {
     residentalAddress?: string
     examination?: TTextBlock[]
     examinations?: TTextBlock[][]
+    therapyMarks?: ETherapyMarksIds[]
+}
+
+export type TTherapyMark = {
+    id: ETherapyMarksIds
+    image: string
+    name: string
+    description?: string
 }

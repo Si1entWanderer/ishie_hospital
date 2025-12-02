@@ -12,8 +12,5 @@ export const patientNutvis: TPatient = {
     sex: ESex.female,
     birthDate: '12.11.2023',
     residentalAddress: 'Twitch канал Ishie_j',
-    examinations: [
-        examination1,
-        examination2
-    ],
+    examinations: [examination1, examination2],
 }

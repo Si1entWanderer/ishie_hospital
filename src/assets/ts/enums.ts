@@ -25,3 +25,13 @@ export enum ETitleTag {
     h6 = 'h6',
     div = 'div',
 }
+
+export enum ETherapyMarksIds {
+    collector = 'collector',
+    pukaton2025 = 'pukaton',
+    streak100 = 'streak',
+    raid100 = 'raid',
+    roulette = 'roulette',
+    clip300 = 'clip',
+    donation3k = 'donation',
+}

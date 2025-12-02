@@ -9,6 +9,7 @@ import PATIENTS from '@/assets/ts/patients'
 import ActionsBlock from '@/components/patient/ActionsBlock.vue'
 import PatientCard from '@/components/patient/PatientCard.vue'
 import MainLayout from '@/layouts/MainLayout.vue'
+import PatientTherapyBlock from '@/components/patient/PatientTherapyBlock.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -45,7 +46,19 @@ function onClickPrev() {
             />
 
             <Transition name="fade" mode="out-in">
-                <PatientCard :key="activePatient.id" :patient="activePatient" />
+                <PatientCard
+                    :class="$style.patientCard"
+                    :key="activePatient.id"
+                    :patient="activePatient"
+                />
+            </Transition>
+
+            <Transition name="fade" mode="out-in">
+                <PatientTherapyBlock
+                    v-if="activePatient.therapyMarks?.length"
+                    :key="activePatient.id"
+                    :patient="activePatient"
+                />
             </Transition>
         </div>
     </MainLayout>
@@ -59,7 +72,7 @@ function onClickPrev() {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 24px;
 
     @include respond-to(mobile) {
         gap: 12px;
@@ -69,6 +82,14 @@ function onClickPrev() {
 .actions {
     @media print {
         display: none;
+    }
+}
+
+.patientCard {
+    margin-top: 36px;
+
+    @include respond-to(mobile) {
+        margin-top: 0;
     }
 }
 </style>

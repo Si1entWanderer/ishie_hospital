@@ -1,6 +1,15 @@
 import type { TTextBlock } from '@/@types/blocks'
 import type { TCheckboxGroupData } from '@/@types/ui'
-import { EIcons } from '@/assets/ts/enums'
+import { EIcons, ETherapyMarksIds } from '@/assets/ts/enums'
+
+import collectorImage from '@/assets/images/marks/collector.png'
+import pukaton2025Image from '@/assets/images/marks/pukaton-2025.png'
+import streak100Image from '@/assets/images/marks/streak-100.png'
+import raid100Image from '@/assets/images/marks/raid-100.png'
+import rouletteImage from '@/assets/images/marks/roulette.png'
+import views300Image from '@/assets/images/marks/views-300.png'
+import donateOptionImage from '@/assets/images/marks/donate-option.png'
+import type { TTherapyMark } from '@/@types/patient'
 
 export const SOCIAL_LINKS = [
     {
@@ -253,9 +262,90 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
             },
         ],
     },
+    {
+        pk: 'therapyReferral',
+        label: '🏥 НАПРАВЛЕНИЕ НА ТЕРАПИЮ',
+        variants: [
+            {
+                pk: '1',
+                label: 'Пукатон 2025',
+            },
+            {
+                pk: '2',
+                label: 'Ветеран фильмотерапии(стрик 100)',
+            },
+            {
+                pk: '3',
+                label: 'Групповая терапия(рейд 100)',
+            },
+            {
+                pk: '4',
+                label: 'Сеанс лудомании(рулетка)',
+            },
+            {
+                pk: '5',
+                label: 'Клипная лоботомия(300+ просмотров на клипе)',
+            },
+            {
+                pk: '6',
+                label: 'Донатотерапия(опция при донате 3к)',
+            },
+        ],
+    },
 ]
 
 export const FILEDS_DEFAULT_VALUES = Object.fromEntries(FORM_FIELDS.map((field) => [field.pk, []]))
 
 export const LOCALSTORAGE_FORM_KEY = 'ishie_hospital_checkup_data'
 export const LOCALSTORAGE_NAME_KEY = 'ishie_hospital_checkup_name'
+
+export const THERAPY_MARKS: TTherapyMark[] = [
+    {
+        id: ETherapyMarksIds.collector,
+        image: collectorImage,
+        name: 'Ишемия внутривенно',
+        description:
+            'Терапия для тех, кого ни перед чем не остановить. Дается за сбор всех терапий',
+    },
+    {
+        id: ETherapyMarksIds.pukaton2025,
+        image: pukaton2025Image,
+        name: 'Пукатон 2025',
+        description:
+            'Терапия для первопроходцев в клинике Иши_j. Дается за получение статуса донатера дня во время Пукатона 2025',
+    },
+    {
+        id: ETherapyMarksIds.streak100,
+        image: streak100Image,
+        name: 'Ветеран фильмотерапии',
+        description:
+            'Терапия для тех, кто жить не может без стрима. Дается за серию просмотров 100',
+    },
+    {
+        id: ETherapyMarksIds.raid100,
+        image: raid100Image,
+        name: 'Групповая терапия',
+        description:
+            'Терапия для тех, кто приходит в компании друзей. Дается за рейд на канал от 100 человек',
+    },
+    {
+        id: ETherapyMarksIds.roulette,
+        image: rouletteImage,
+        name: 'Сеанс лудомании',
+        description: 'Терапия для везучих. Может выпасть в рулетке при донате',
+    },
+    {
+        id: ETherapyMarksIds.clip300,
+        image: views300Image,
+        name: 'Клипная лоботомия',
+        description:
+            'Терапия для тех, кто умеет подобрать кадр. Дается за 300+ просмотров на клипе',
+    },
+    {
+        id: ETherapyMarksIds.donation3k,
+        image: donateOptionImage,
+        name: 'Донатотерапия',
+        description:
+            'Терапия для тех, кто устал от бесплатной медицины. Дается за донат 3 000₽+ с текстом "хочу в клинику"',
+    },
+]
