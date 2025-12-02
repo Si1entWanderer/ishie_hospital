@@ -3,6 +3,7 @@ import { ESex } from '@/assets/ts/enums'
 
 import nutvisAvatar from '@/assets/images/avatars/nutvisAvatar.jpg'
 import examination1 from './examinations/examination1'
+import examination2 from './examinations/examination2'
 
 export const patientNutvis: TPatient = {
     id: '93608',
@@ -11,5 +12,8 @@ export const patientNutvis: TPatient = {
     sex: ESex.female,
     birthDate: '12.11.2023',
     residentalAddress: 'Twitch канал Ishie_j',
-    examinations: [examination1],
+    examinations: [
+        examination1,
+        examination2
+    ],
 }
