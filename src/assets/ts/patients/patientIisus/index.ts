@@ -1,5 +1,5 @@
 import type { TPatient } from '@/@types/patient'
-import { ESex } from '@/assets/ts/enums'
+import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
 
 import iisusAvatar from '@/assets/images/avatars/iisus.jpg'
 import examination1 from './examinations/examination1'
@@ -13,4 +13,5 @@ export const patientIisus: TPatient = {
     birthDate: '9.01.2025',
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1, examination2],
+    therapyMarks: [ETherapyMarksIds.pukaton2025],
 }
