@@ -5,6 +5,7 @@ import { patientMisaki } from '@/assets/ts/patients/patientMisaki'
 import { patientNutvis } from '@/assets/ts/patients/patientNutvis'
 import { patientOmdfr } from '@/assets/ts/patients/patientOmdfr'
 import { patientPitaHavus } from '@/assets/ts/patients/patientPitaHavus'
+import { patientSamr1na } from '@/assets/ts/patients/patientSamr1na'
 import { patientYumekomoore } from '@/assets/ts/patients/patientYumekomoore'
 
 export default [
@@ -15,5 +16,6 @@ export default [
     patientNutvis,
     patientOmdfr,
     patientMi5akiMei,
-    patientYumekomoore
+    patientYumekomoore,
+    patientSamr1na,
 ]
