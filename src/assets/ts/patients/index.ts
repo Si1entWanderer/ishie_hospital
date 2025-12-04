@@ -1,5 +1,6 @@
 import { patientAlyooha } from '@/assets/ts/patients/patientAlyooha'
 import { patientIisus } from '@/assets/ts/patients/patientIisus'
+import { patientLis_7ete } from '@/assets/ts/patients/patientLis_7ete'
 import { patientMi5akiMei } from '@/assets/ts/patients/patientMi5akiMei'
 import { patientMisaki } from '@/assets/ts/patients/patientMisaki'
 import { patientNutvis } from '@/assets/ts/patients/patientNutvis'
@@ -18,4 +19,5 @@ export default [
     patientMi5akiMei,
     patientYumekomoore,
     patientSamr1na,
+    patientLis_7ete,
 ]
