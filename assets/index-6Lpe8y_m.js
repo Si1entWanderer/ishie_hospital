@@ -192,7 +192,7 @@
                 </ol>
             `},{id:6,title:"💞 VI. Уровень сердечной нагрузки",description:`
                 <p>Уровень MAX — Бьется Даже На Парковке</p>
-            `}],Lf={id:"93608",name:"nutvismunt_j",image:Of,sex:Qe.female,birthDate:"12.11.2023",residentalAddress:"Twitch канал Ishie_j",examinations:[Nf,Vf],therapyMarks:[ve.pukaton2025]},Bf="/assets/omdfrAvatar-Cy03ht8g.jpg",Df=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
+            `}],Lf={id:"93608",name:"nutvismunt_j",image:Of,sex:Qe.female,birthDate:"12.11.2023",residentalAddress:"Twitch канал Ishie_j",examinations:[Nf,Vf],therapyMarks:[ve.pukaton2025,ve.clip300]},Bf="/assets/omdfrAvatar-Cy03ht8g.jpg",Df=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
                 <p>Пульсирующий актив</p>
             `},{id:2,title:"💗 II. Основной диагноз",description:`
                 <p>Доброкачественное увеличение любви</p>
