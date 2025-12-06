@@ -8,6 +8,7 @@ import { patientOmdfr } from '@/assets/ts/patients/patientOmdfr'
 import { patientPitaHavus } from '@/assets/ts/patients/patientPitaHavus'
 import { patientSamr1na } from '@/assets/ts/patients/patientSamr1na'
 import { patientYumekomoore } from '@/assets/ts/patients/patientYumekomoore'
+import { patientDreamdel } from '@/assets/ts/patients/patientDreamdel'
 
 export default [
     patientAlyooha,
@@ -20,4 +21,5 @@ export default [
     patientYumekomoore,
     patientSamr1na,
     patientLis_7ete,
+    patientDreamdel,
 ]
