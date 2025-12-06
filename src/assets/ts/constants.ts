@@ -1,6 +1,7 @@
 import type { TTextBlock } from '@/@types/blocks'
 import type { TCheckboxGroupData } from '@/@types/ui'
 import { EIcons, ETherapyMarksIds } from '@/assets/ts/enums'
+import type { TTherapyMark } from '@/@types/patient'
 
 import collectorImage from '@/assets/images/marks/collector.png'
 import pukaton2025Image from '@/assets/images/marks/pukaton-2025.png'
@@ -9,7 +10,6 @@ import raid100Image from '@/assets/images/marks/raid-100.png'
 import rouletteImage from '@/assets/images/marks/roulette.png'
 import views300Image from '@/assets/images/marks/views-300.png'
 import donateOptionImage from '@/assets/images/marks/donate-option.png'
-import type { TTherapyMark } from '@/@types/patient'
 
 export const SOCIAL_LINKS = [
     {
