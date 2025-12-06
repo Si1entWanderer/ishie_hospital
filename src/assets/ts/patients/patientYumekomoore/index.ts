@@ -12,5 +12,5 @@ export const patientYumekomoore: TPatient = {
     birthDate: '[ДАННЫЕ УДАЛЕНЫ]',
     residentalAddress: 'Twitch канал yumekomoore',
     examinations: [examination1],
-    therapyMarks: [ETherapyMarksIds.raid100],
+    therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.raid100],
 }

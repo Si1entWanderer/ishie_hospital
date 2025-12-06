@@ -67,6 +67,7 @@ const activeMarks = computed(() =>
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    gap: 24px;
     margin: 0;
     padding: 0;
 
