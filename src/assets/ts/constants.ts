@@ -26,21 +26,6 @@ export const SOCIAL_LINKS = [
     },
 ]
 
-export const FAQ_TEXTS: TTextBlock[] = [
-    {
-        id: 1,
-        title: 'КАК ПОПАСТЬ НА&nbsp;ЛЕЧЕНИЕ?',
-        description:
-            'Чтобы попасть на&nbsp;лечение нужно поучаствовать в&nbsp;конкурсах на&nbsp;Twitch канале Ishie_j. С&nbsp;23.11.2025 проходит событие Пукатон, в&nbsp;рамках которого можно получить место в&nbsp;больнице. Для этого нужно во&nbsp;время действия Пукатона стать топ донатером дня.',
-    },
-    {
-        id: 2,
-        title: 'Я&nbsp;СТАЛ ТОП ДОНАТЕРОМ ДНЯ, ЧТО ДАЛЬШЕ?',
-        description:
-            'Если ты&nbsp;выиграл(а) место в&nbsp;больницу, поздравляю, теперь как и&nbsp;в&nbsp;любой больнице немножко бюрократии. Тебе нужно будет в&nbsp;личку Телеграм канала Иши скинуть ник на&nbsp;Twitch, пол(по желанию) и&nbsp;желаемую фотку. Фотка не&nbsp;должна нарушать правила Twitch и&nbsp;законодательство РФ. Это не&nbsp;обязательно должна быть твоя личная фотка, просто картинка которая ассоциируется с&nbsp;тобой. Будет плюсом если ты&nbsp;кадрируешь ее&nbsp;в&nbsp;соотношение 1:1.',
-    },
-]
-
 export const FORM_FIELDS: TCheckboxGroupData[] = [
     {
         pk: 'heartAge',
@@ -347,5 +332,24 @@ export const THERAPY_MARKS: TTherapyMark[] = [
         name: 'Донатотерапия',
         description:
             'Терапия для тех, кто устал от бесплатной медицины. Дается за донат 3 000₽+ с текстом "хочу в клинику"',
+    },
+]
+
+export const ACTIVE_THERAPIES = [
+    ETherapyMarksIds.collector,
+    ETherapyMarksIds.streak100,
+    ETherapyMarksIds.raid100,
+    ETherapyMarksIds.roulette,
+    ETherapyMarksIds.clip300,
+    ETherapyMarksIds.donation3k,
+]
+
+export const FAQ_TEXTS: TTextBlock[] = [
+    {
+        id: 1,
+        title: 'КАК ПОПАСТЬ НА&nbsp;ЛЕЧЕНИЕ?',
+        description: `Чтобы попасть в клинику нужно получить достижение на Twitch канале Ishie_j (направление на терапию)
+                Список доступных на данный момент терапий:
+            `,
     },
 ]
