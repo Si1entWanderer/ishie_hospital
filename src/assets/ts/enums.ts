@@ -8,6 +8,7 @@ export enum EIcons {
     arrowBack = '#arrow-back',
     arrowBackAlt = '#arrow-back-alt',
     arrowForwardAlt = '#arrow-forward-alt',
+    medicalCross = '#medical-cross',
 }
 
 export enum ESex {
