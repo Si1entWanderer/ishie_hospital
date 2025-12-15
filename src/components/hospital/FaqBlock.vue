@@ -80,12 +80,22 @@ const activeTherapies = computed(() => THERAPY_MARKS.filter(mark => ACTIVE_THERA
     gap: 20px;
     margin: 0;
     padding: 0;
+
+    @include respond-to(mobile) {
+        gap: 32px;
+    }
 }
 
 .therapy {
     display: flex;
     align-items: center;
     gap: 24px;
+
+    @include respond-to(mobile) {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
 }
 
 .image {
@@ -93,6 +103,10 @@ const activeTherapies = computed(() => THERAPY_MARKS.filter(mark => ACTIVE_THERA
     width: 120px;
     height: auto;
     aspect-ratio: 1/1;
+
+    @include respond-to(mobile) {
+        width: 200px;
+    }
 }
 
 .content {
