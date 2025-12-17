@@ -57,5 +57,9 @@ $screen-sizes: (
         font-size: 14px;
         line-height: 18px;
         font-weight: normal;
+    } @else if $text-type == 'l3' {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: normal;
     }
 }

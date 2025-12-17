@@ -9,6 +9,7 @@ import SEAL_IMAGE from '@/assets/images/seal.png'
 import BlockWrapper from '@/components/common/BlockWrapper.vue'
 import TextBlock from '@/components/common/TextBlock.vue'
 import VButton from '@/components/ui/VButton.vue'
+import StaffStatus from '@/components/patient/StaffStatus.vue'
 
 const PATIENT_IMAGE_ALT = 'фото пациента'
 const SEAL_IMAGE_ALT = 'шуточная печать'
@@ -82,6 +83,11 @@ function getNumberClassList(index: number) {
                     <use :xlink:href="EIcons.heart" />
                 </svg>
             </div>
+
+            <StaffStatus
+                v-if="patient?.staffName"
+                :staff-name="patient.staffName"
+            />
 
             <div :class="$style.dataBlock">
                 <h3 :class="$style.dataTitle">
