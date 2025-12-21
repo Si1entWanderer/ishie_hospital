@@ -11,7 +11,7 @@ export type TPatient = {
     examination?: TTextBlock[]
     examinations?: TTextBlock[][]
     therapyMarks?: ETherapyMarksIds[]
-    staffName?: string,
+    staffName?: string
 }
 
 export type TTherapyMark = {

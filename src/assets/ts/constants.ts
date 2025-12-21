@@ -357,7 +357,7 @@ export const FAQ_TEXTS: TTextBlock[] = [
 export const STAFF_NAMES = {
     alyooha: 'Дежурный батя',
     iisus: 'Бог МРТ(мемы, рисунки, ты пися)',
-    pitaHavus: 'Смотритель дурки',
+    pitaHavus: 'Собиратель пуков',
     misaki: 'Нейро-терапевт',
     nutvis: 'Boobs inspector',
 }

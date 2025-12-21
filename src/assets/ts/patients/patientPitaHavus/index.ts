@@ -14,6 +14,6 @@ export const patientPitaHavus: TPatient = {
     birthDate: '30.03.2025',
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1, examination2],
-    therapyMarks: [ETherapyMarksIds.pukaton2025],
+    therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.roulette],
     staffName: STAFF_NAMES.pitaHavus,
 }

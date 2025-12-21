@@ -1,45 +1,28 @@
 <script setup lang="ts">
-import {computed} from 'vue';
+import { computed } from 'vue'
 import { FAQ_TEXTS, THERAPY_MARKS, ACTIVE_THERAPIES } from '@/assets/ts/constants'
 
 import BlockWrapper from '@/components/common/BlockWrapper.vue'
 
-const activeTherapies = computed(() => THERAPY_MARKS.filter(mark => ACTIVE_THERAPIES.includes(mark.id)))
+const activeTherapies = computed(() =>
+    THERAPY_MARKS.filter((mark) => ACTIVE_THERAPIES.includes(mark.id)),
+)
 </script>
 
 <template>
     <BlockWrapper :class="$style.FaqBlock">
-        <h2
-            v-html="FAQ_TEXTS[0]?.title"
-            :class="$style.title"
-        />
+        <h2 v-html="FAQ_TEXTS[0]?.title" :class="$style.title" />
 
-        <div
-            v-html="FAQ_TEXTS[0]?.description"
-            :class="$style.description"
-        />
+        <div v-html="FAQ_TEXTS[0]?.description" :class="$style.description" />
 
         <ul :class="$style.therapies">
-            <li
-                v-for="therapy in activeTherapies"
-                :key="therapy.id"
-                :class="$style.therapy"
-            >
-                <img
-                    :src="therapy.image"
-                    :class="$style.image"
-                />
+            <li v-for="therapy in activeTherapies" :key="therapy.id" :class="$style.therapy">
+                <img :src="therapy.image" :class="$style.image" />
 
                 <div :class="$style.content">
-                    <h4
-                        :class="$style.therapyName"
-                        v-html="therapy.name"
-                    />
+                    <h4 :class="$style.therapyName" v-html="therapy.name" />
 
-                    <p
-                        :class="$style.therapyDescription"
-                        v-html="therapy.description"
-                    />
+                    <p :class="$style.therapyDescription" v-html="therapy.description" />
                 </div>
             </li>
         </ul>

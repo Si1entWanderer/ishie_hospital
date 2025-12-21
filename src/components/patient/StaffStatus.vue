@@ -1,34 +1,31 @@
 <script setup lang="ts">
-import { EIcons } from '@/assets/ts/enums';
+import { EIcons } from '@/assets/ts/enums'
 
-const DEFAULT_STAFF_NAME = 'Дежурный врач';
-const LABEL = 'медперсонал';
+const DEFAULT_STAFF_NAME = 'Дежурный врач'
+const LABEL = 'медперсонал'
 
-withDefaults(defineProps<{
-    staffName?: string
-}>(), {
-    staffName: DEFAULT_STAFF_NAME,
-})
+withDefaults(
+    defineProps<{
+        staffName?: string
+    }>(),
+    {
+        staffName: DEFAULT_STAFF_NAME,
+    },
+)
 </script>
 
 <template>
-<div :class="$style.StaffStatus">
-    <div :class="$style.content">
-        <p
-            :class="$style.label"
-            v-html="LABEL"
-        />
+    <div :class="$style.StaffStatus">
+        <div :class="$style.content">
+            <p :class="$style.label" v-html="LABEL" />
 
-        <p
-            :class="$style.name"
-            v-html="staffName"
-        />
+            <p :class="$style.name" v-html="staffName" />
+        </div>
+
+        <svg :class="$style.icon">
+            <use :xlink:href="EIcons.medicalCross" />
+        </svg>
     </div>
-
-    <svg :class="$style.icon">
-        <use :xlink:href="EIcons.medicalCross"/>
-    </svg>
-</div>
 </template>
 
 <style lang="scss" module>

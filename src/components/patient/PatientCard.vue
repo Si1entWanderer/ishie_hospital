@@ -84,10 +84,7 @@ function getNumberClassList(index: number) {
                 </svg>
             </div>
 
-            <StaffStatus
-                v-if="patient?.staffName"
-                :staff-name="patient.staffName"
-            />
+            <StaffStatus v-if="patient?.staffName" :staff-name="patient.staffName" />
 
             <div :class="$style.dataBlock">
                 <h3 :class="$style.dataTitle">
