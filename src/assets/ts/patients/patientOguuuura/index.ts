@@ -9,7 +9,7 @@ export const patientOguuuura: TPatient = {
     name: 'oguuuura',
     image: placeholderAvatar,
     sex: ESex.male,
-    birthDate: '[ДАННЫЕ УДАЛЕНЫ]',
+    birthDate: '12.11.2023',
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.donation3k],
