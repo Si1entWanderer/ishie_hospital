@@ -67,7 +67,7 @@
                 </ol>
             `},{id:6,title:"💞 VI. Уровень сердечной нагрузки",description:`
                 <p>Уровень 3 — Ускоренная Симпатия</p>
-            `}],Sf={id:"65460",name:"darkvels_j",image:nn,sex:Le.male,birthDate:"[ДАННЫЕ УДАЛЕНЫ]",residentalAddress:"Twitch канал Ishie_j",examinations:[wf],therapyMarks:[Y.pukaton2025]},Tf="/assets/dreamdelAvatar-24BVrRVr.jpg",$f=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
+            `}],Sf={id:"65460",name:"darkvels_j",image:nn,sex:Le.male,birthDate:"24.05.2025",residentalAddress:"Twitch канал Ishie_j",examinations:[wf],therapyMarks:[Y.pukaton2025]},Tf="/assets/dreamdelAvatar-24BVrRVr.jpg",$f=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
                 <p>VIP: Любимый Гей</p>
             `},{id:2,title:"💗 II. Основной диагноз",description:`
                 <p>Доброкачественное увеличение любви</p>
@@ -283,7 +283,7 @@
                 </ol>
             `},{id:6,title:"💞 VI. Уровень сердечной нагрузки",description:`
                 <p>Уровень MAX — Бьется Даже На Парковке</p>
-            `}],Jf={id:"70800",name:"oguuuura",image:nn,sex:Le.male,birthDate:"[ДАННЫЕ УДАЛЕНЫ]",residentalAddress:"Twitch канал Ishie_j",examinations:[Xf],therapyMarks:[Y.donation3k]},Yf="/assets/omdfrAvatar-Cy03ht8g.jpg",Qf=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
+            `}],Jf={id:"70800",name:"oguuuura",image:nn,sex:Le.male,birthDate:"12.11.2023",residentalAddress:"Twitch канал Ishie_j",examinations:[Xf],therapyMarks:[Y.donation3k]},Yf="/assets/omdfrAvatar-Cy03ht8g.jpg",Qf=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
                 <p>Пульсирующий актив</p>
             `},{id:2,title:"💗 II. Основной диагноз",description:`
                 <p>Доброкачественное увеличение любви</p>
