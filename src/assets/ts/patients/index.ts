@@ -7,6 +7,7 @@ import { patientLis_7ete } from '@/assets/ts/patients/patientLis_7ete'
 import { patientMi5akiMei } from '@/assets/ts/patients/patientMi5akiMei'
 import { patientMisaki } from '@/assets/ts/patients/patientMisaki'
 import { patientNutvis } from '@/assets/ts/patients/patientNutvis'
+import { patientOguuuura } from '@/assets/ts/patients/patientOguuuura'
 import { patientOmdfr } from '@/assets/ts/patients/patientOmdfr'
 import { patientPitaHavus } from '@/assets/ts/patients/patientPitaHavus'
 import { patientSamr1na } from '@/assets/ts/patients/patientSamr1na'
@@ -25,5 +26,6 @@ export default [
     patientLis_7ete,
     patientDreamdel,
     patientDarkvels,
+    patientOguuuura,
     patientKunilika666,
 ]
