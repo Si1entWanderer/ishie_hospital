@@ -12,5 +12,5 @@ export const patientDarkvels: TPatient = {
     birthDate: '24.05.2025',
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1],
-    therapyMarks: [ETherapyMarksIds.pukaton2025],
+    therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.roulette],
 }
