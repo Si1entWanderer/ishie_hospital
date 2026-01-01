@@ -12,6 +12,7 @@ import { patientOmdfr } from '@/assets/ts/patients/patientOmdfr'
 import { patientPitaHavus } from '@/assets/ts/patients/patientPitaHavus'
 import { patientSamr1na } from '@/assets/ts/patients/patientSamr1na'
 import { patientYumekomoore } from '@/assets/ts/patients/patientYumekomoore'
+import { patientDze_ni } from '@/assets/ts/patients/patientDze_ni'
 
 export default [
     patientAlyooha,
@@ -28,4 +29,5 @@ export default [
     patientDarkvels,
     patientOguuuura,
     patientKunilika666,
+    patientDze_ni,
 ]
