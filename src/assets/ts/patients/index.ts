@@ -1,7 +1,9 @@
 import { patientAlyooha } from '@/assets/ts/patients/patientAlyooha'
 import { patientDarkvels } from '@/assets/ts/patients/patientDarkvels'
 import { patientDreamdel } from '@/assets/ts/patients/patientDreamdel'
+import { patientDze_ni } from '@/assets/ts/patients/patientDze_ni'
 import { patientIisus } from '@/assets/ts/patients/patientIisus'
+import { patientIwyry } from '@/assets/ts/patients/patientIwyry'
 import { patientKunilika666 } from '@/assets/ts/patients/patientKunilika666'
 import { patientLis_7ete } from '@/assets/ts/patients/patientLis_7ete'
 import { patientMi5akiMei } from '@/assets/ts/patients/patientMi5akiMei'
@@ -12,7 +14,6 @@ import { patientOmdfr } from '@/assets/ts/patients/patientOmdfr'
 import { patientPitaHavus } from '@/assets/ts/patients/patientPitaHavus'
 import { patientSamr1na } from '@/assets/ts/patients/patientSamr1na'
 import { patientYumekomoore } from '@/assets/ts/patients/patientYumekomoore'
-import { patientDze_ni } from '@/assets/ts/patients/patientDze_ni'
 
 export default [
     patientAlyooha,
@@ -30,4 +31,5 @@ export default [
     patientOguuuura,
     patientKunilika666,
     patientDze_ni,
+    patientIwyry,
 ]
