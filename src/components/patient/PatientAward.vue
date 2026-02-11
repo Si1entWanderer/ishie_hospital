@@ -65,7 +65,8 @@ function onImageLoad(image: EImageType) {
 .PatientAward {
     position: relative;
     width: 280px;
-    height: 280px;
+    height: auto;
+    aspect-ratio: 1/1;
 
     .frame,
     .token {
@@ -94,8 +95,8 @@ function onImageLoad(image: EImageType) {
     top: 50%;
     left: 50%;
     z-index: 1;
-    width: 116px;
-    height: 116px;
+    width: 42%;
+    height: 42%;
     object-fit: contain;
     transform: translate(-50%, -50%);
 }
@@ -104,8 +105,8 @@ function onImageLoad(image: EImageType) {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 194px;
-    height: 194px;
+    width: 70%;
+    height: 70%;
     background-color: $dark-100;
     border-radius: 50%;
     background: linear-gradient(90deg, $light-300 25%, $light-100 37%, $light-300 63%);

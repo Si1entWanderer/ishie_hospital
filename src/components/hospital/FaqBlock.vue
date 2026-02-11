@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { FAQ_TEXTS, THERAPY_MARKS, ACTIVE_THERAPIES } from '@/assets/ts/constants'
 
 import BlockWrapper from '@/components/common/BlockWrapper.vue'
+import PatientAward from '@/components/patient/PatientAward.vue'
 
 const activeTherapies = computed(() =>
     THERAPY_MARKS.filter((mark) => ACTIVE_THERAPIES.includes(mark.id)),
@@ -17,7 +18,7 @@ const activeTherapies = computed(() =>
 
         <ul :class="$style.therapies">
             <li v-for="therapy in activeTherapies" :key="therapy.id" :class="$style.therapy">
-                <img :src="therapy.image" :class="$style.image" />
+                <PatientAward :mark="therapy" :class="$style.image" />
 
                 <div :class="$style.content">
                     <h4 :class="$style.therapyName" v-html="therapy.name" />
@@ -60,13 +61,8 @@ const activeTherapies = computed(() =>
 .therapies {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     margin: 0;
     padding: 0;
-
-    @include respond-to(mobile) {
-        gap: 32px;
-    }
 }
 
 .therapy {
@@ -83,9 +79,7 @@ const activeTherapies = computed(() =>
 
 .image {
     flex-shrink: 0;
-    width: 120px;
-    height: auto;
-    aspect-ratio: 1/1;
+    width: 130px;
 
     @include respond-to(mobile) {
         width: 200px;
