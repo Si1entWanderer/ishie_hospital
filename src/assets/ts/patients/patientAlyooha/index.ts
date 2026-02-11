@@ -17,4 +17,6 @@ export const patientAlyooha: TPatient = {
     examinations: [examination1, examination2],
     therapyMarks: [ETherapyMarksIds.pukaton2025],
     staffName: STAFF_NAMES.alyooha,
+    staffExperience: '3 года',
+    registrationDate: 1763856000000,
 }

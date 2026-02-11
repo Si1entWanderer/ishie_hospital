@@ -20,4 +20,5 @@ export const patientIisus: TPatient = {
         ETherapyMarksIds.donation3k,
     ],
     staffName: STAFF_NAMES.iisus,
+    registrationDate: 1763942400000,
 }

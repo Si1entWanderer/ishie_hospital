@@ -36,3 +36,15 @@ export enum ETherapyMarksIds {
     clip300 = 'clip',
     donation3k = 'donation',
 }
+
+export enum ETherapyMarksGrades {
+    legendary = 'legendary',
+    epic = 'epic',
+    rare = 'rare',
+    uncommon = 'uncommon',
+}
+
+export enum EPatientCardThemes {
+    default = 'default',
+    shark = 'shark',
+}

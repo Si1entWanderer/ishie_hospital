@@ -13,4 +13,5 @@ export const patientSamr1na: TPatient = {
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.pukaton2025],
+    registrationDate: 1764720000000,
 }

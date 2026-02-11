@@ -20,4 +20,5 @@ export const patientPitaHavus: TPatient = {
         ETherapyMarksIds.roulette,
     ],
     staffName: STAFF_NAMES.pitaHavus,
+    registrationDate: 1764028800000,
 }

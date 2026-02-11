@@ -1,15 +1,20 @@
 import type { TTextBlock } from '@/@types/blocks'
 import type { TCheckboxGroupData } from '@/@types/ui'
-import { EIcons, ETherapyMarksIds } from '@/assets/ts/enums'
+import { EIcons, ETherapyMarksIds, ETherapyMarksGrades } from '@/assets/ts/enums'
 import type { TTherapyMark } from '@/@types/patient'
 
-import collectorImage from '@/assets/images/marks/collector.png'
-import pukaton2025Image from '@/assets/images/marks/pukaton-2025.png'
-import streak100Image from '@/assets/images/marks/streak-100.png'
-import raid100Image from '@/assets/images/marks/raid-100.png'
-import rouletteImage from '@/assets/images/marks/roulette.png'
-import views300Image from '@/assets/images/marks/views-300.png'
-import donateOptionImage from '@/assets/images/marks/donate-option.png'
+import collectorImage from '@/assets/images/rewards/collector.png'
+import pukaton2025Image from '@/assets/images/rewards/pukaton.png'
+import streak100Image from '@/assets/images/rewards/streak.png'
+import raid100Image from '@/assets/images/rewards/raid.png'
+import rouletteImage from '@/assets/images/rewards/gamble.png'
+import views300Image from '@/assets/images/rewards/clip300.png'
+import donateOptionImage from '@/assets/images/rewards/donation.png'
+
+import frameLegendaryImage from '@/assets/images/frames/legendary.png';
+import frameEpicImage from '@/assets/images/frames/epic.png';
+import frameRareImage from '@/assets/images/frames/rare.png';
+import frameUncommonImage from '@/assets/images/frames/uncommon.png';
 
 export const SOCIAL_LINKS = [
     {
@@ -289,6 +294,7 @@ export const THERAPY_MARKS: TTherapyMark[] = [
         id: ETherapyMarksIds.collector,
         image: collectorImage,
         name: 'Ишемия внутривенно',
+        grade: ETherapyMarksGrades.legendary,
         description:
             'Терапия для тех, кого ни перед чем не остановить. Дается за сбор всех терапий',
     },
@@ -296,6 +302,7 @@ export const THERAPY_MARKS: TTherapyMark[] = [
         id: ETherapyMarksIds.pukaton2025,
         image: pukaton2025Image,
         name: 'Пукатон 2025',
+        grade: ETherapyMarksGrades.legendary,
         description:
             'Терапия для первопроходцев в клинике Иши_j. Дается за получение статуса донатера дня во время Пукатона 2025',
     },
@@ -303,6 +310,7 @@ export const THERAPY_MARKS: TTherapyMark[] = [
         id: ETherapyMarksIds.streak100,
         image: streak100Image,
         name: 'Ветеран фильмотерапии',
+        grade: ETherapyMarksGrades.legendary,
         description:
             'Терапия для тех, кто жить не может без стрима. Дается за серию просмотров 100',
     },
@@ -310,6 +318,7 @@ export const THERAPY_MARKS: TTherapyMark[] = [
         id: ETherapyMarksIds.raid100,
         image: raid100Image,
         name: 'Групповая терапия',
+        grade: ETherapyMarksGrades.epic,
         description:
             'Терапия для тех, кто приходит в компании друзей. Дается за рейд на канал от 100 человек',
     },
@@ -317,12 +326,14 @@ export const THERAPY_MARKS: TTherapyMark[] = [
         id: ETherapyMarksIds.roulette,
         image: rouletteImage,
         name: 'Сеанс лудомании',
+        grade: ETherapyMarksGrades.rare,
         description: 'Терапия для везучих. Может выпасть в рулетке при донате',
     },
     {
         id: ETherapyMarksIds.clip300,
         image: views300Image,
         name: 'Клипная лоботомия',
+        grade: ETherapyMarksGrades.rare,
         description:
             'Терапия для тех, кто умеет подобрать кадр. Дается за 300+ просмотров на клипе',
     },
@@ -330,10 +341,18 @@ export const THERAPY_MARKS: TTherapyMark[] = [
         id: ETherapyMarksIds.donation3k,
         image: donateOptionImage,
         name: 'Донатотерапия',
+        grade: ETherapyMarksGrades.uncommon,
         description:
             'Терапия для тех, кто устал от бесплатной медицины. Дается за донат 3 000₽+ с текстом "хочу в клинику"',
     },
 ]
+
+export const THERAPY_FRAME_BY_GRADE: Record<ETherapyMarksGrades, string> = {
+    [ETherapyMarksGrades.legendary]: frameLegendaryImage,
+    [ETherapyMarksGrades.epic]: frameEpicImage,
+    [ETherapyMarksGrades.rare]: frameRareImage,
+    [ETherapyMarksGrades.uncommon]: frameUncommonImage
+}
 
 export const ACTIVE_THERAPIES = [
     ETherapyMarksIds.collector,

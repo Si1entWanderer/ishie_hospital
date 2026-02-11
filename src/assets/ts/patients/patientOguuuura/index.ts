@@ -13,4 +13,5 @@ export const patientOguuuura: TPatient = {
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.donation3k],
+    registrationDate: 1766966400000,
 }

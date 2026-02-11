@@ -16,4 +16,5 @@ export const patientNutvis: TPatient = {
     examinations: [examination1, examination2],
     therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.clip300],
     staffName: STAFF_NAMES.nutvis,
+    registrationDate: 1764115200000,
 }

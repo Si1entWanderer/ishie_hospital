@@ -13,4 +13,5 @@ export const patientLis_7ete: TPatient = {
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.pukaton2025],
+    registrationDate: 1766620800000,
 }

@@ -14,4 +14,5 @@ export const patientOmdfr: TPatient = {
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1, examination2],
     therapyMarks: [ETherapyMarksIds.pukaton2025],
+    registrationDate: 1764288000000,
 }

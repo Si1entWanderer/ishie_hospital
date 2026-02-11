@@ -2,7 +2,7 @@
 import { computed, ref, useCssModule } from 'vue'
 
 import type { TPatient } from '@/@types/patient'
-import { EIcons } from '@/assets/ts/enums'
+import { EIcons, EPatientCardThemes } from '@/assets/ts/enums'
 
 import SEAL_IMAGE from '@/assets/images/seal.png'
 
@@ -17,6 +17,7 @@ const SEAL_IMAGE_ALT = 'шуточная печать'
 const FIRST_EXAMINATION_LABEL = 'Первичный'
 
 const LABELS = {
+    STAFF_EXPERIENCE: 'Стаж работы',
     NAME: 'Имя',
     SEX: 'Пол',
     BIRTH_DATE: 'Дата рождения',
@@ -27,9 +28,15 @@ const LABELS = {
 
 const $style = useCssModule()
 
-const props = defineProps<{
-    patient: TPatient
-}>()
+const props = withDefaults(
+    defineProps<{
+        patient: TPatient
+        theme?: EPatientCardThemes
+    }>(),
+    {
+        theme: EPatientCardThemes.default,
+    },
+)
 
 const isLastExamination = ref(true)
 const examinationIndex = ref(0)
@@ -43,6 +50,10 @@ const buttonsClassList = computed(() => ({
     otherExaminations: {
         [$style._active]: !isLastExamination.value,
     },
+}))
+
+const classList = computed(() => ({
+    [$style[`_theme-${props.theme}`] as string]: props.theme,
 }))
 
 const lastExaminationIndex = computed(() => (props.patient?.examinations?.length ?? 1) - 1)
@@ -65,7 +76,7 @@ function getNumberClassList(index: number) {
 </script>
 
 <template>
-    <BlockWrapper :class="$style.PatientCard">
+    <BlockWrapper :class="[$style.PatientCard, classList]">
         <div :class="$style.sidebar">
             <h2 :class="$style.title">
                 {{ activeTitle }}
@@ -85,6 +96,16 @@ function getNumberClassList(index: number) {
             </div>
 
             <StaffStatus v-if="patient?.staffName" :staff-name="patient.staffName" />
+
+            <div v-if="patient?.staffExperience" :class="$style.dataBlock">
+                <h3 :class="$style.dataTitle">
+                    {{ LABELS.STAFF_EXPERIENCE }}
+                </h3>
+
+                <p :class="$style.dataDescription">
+                    {{ patient?.staffExperience }}
+                </p>
+            </div>
 
             <div :class="$style.dataBlock">
                 <h3 :class="$style.dataTitle">
@@ -169,7 +190,12 @@ function getNumberClassList(index: number) {
                 </button>
             </div>
 
-            <TextBlock v-for="text in activeExamination" :key="text?.id" :data="text" />
+            <TextBlock
+                v-for="text in activeExamination"
+                :class="$style.text"
+                :key="text?.id"
+                :data="text"
+            />
         </div>
 
         <img :class="$style.seal" :src="SEAL_IMAGE" :alt="SEAL_IMAGE_ALT" />
@@ -177,10 +203,13 @@ function getNumberClassList(index: number) {
 </template>
 
 <style lang="scss" module>
+$light-backgound-color: var(--light-backgound-color, $pink-300);
+$border-color: var(--border-color, $pink-100);
+
 .PatientCard {
     position: relative;
     display: flex;
-    background-color: $pink-300;
+    background-color: $light-backgound-color;
 
     @include respond-to(mobile) {
         flex-direction: column;
@@ -198,21 +227,21 @@ function getNumberClassList(index: number) {
     flex-basis: 325px;
     gap: 24px;
     padding: 40px;
-    border-right: 2px solid $pink-100;
+    border-right: 2px solid $border-color;
 
     @include respond-to(mobile) {
         flex-basis: 100%;
         gap: 20px;
         padding: 24px;
         border-right: none;
-        border-bottom: 2px solid $pink-100;
+        border-bottom: 2px solid $border-color;
     }
 
     @media print {
         flex-basis: 325px;
         padding: 40px;
         gap: 24px;
-        border-right: 2px solid $pink-100;
+        border-right: 2px solid $border-color;
         border-bottom: none;
     }
 }
@@ -273,8 +302,8 @@ function getNumberClassList(index: number) {
 
 .tab {
     padding: 8px 24px 4px;
-    background-color: $pink-300;
-    border: 3px solid $pink-100;
+    background-color: $light-backgound-color;
+    border: 3px solid $border-color;
     border-bottom-width: 4px;
     border-radius: 12px 12px 0 0;
     color: $dark-0;
@@ -314,14 +343,14 @@ function getNumberClassList(index: number) {
 
 .number {
     padding: 8px 16px;
-    border: 3px solid $pink-100;
+    border: 3px solid $border-color;
     border-radius: 12px;
     background-color: white;
     color: $dark-0;
     cursor: pointer;
 
     &._active {
-        background-color: $pink-300;
+        background-color: $light-backgound-color;
         cursor: default;
     }
 }

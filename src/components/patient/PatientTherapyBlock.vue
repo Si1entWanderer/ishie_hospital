@@ -6,7 +6,7 @@ import type { TPatient } from '@/@types/patient'
 import { THERAPY_MARKS } from '@/assets/ts/constants'
 
 import BlockWrapper from '@/components/common/BlockWrapper.vue'
-import PatientMark from '@/components/patient/PatientMark.vue'
+import PatientAward from '@/components/patient/PatientAward.vue'
 
 const TITLE = 'ОТМЕТКИ О ПРОЙДЕННЫХ ТЕРАПИЯХ'
 
@@ -28,7 +28,7 @@ const activeMarks = computed(() =>
         <div :class="$style.body">
             <ul :class="$style.list">
                 <li v-for="mark in activeMarks" :class="$style.item" :key="mark.id">
-                    <PatientMark :mark="mark" />
+                    <PatientAward :mark="mark" />
                 </li>
             </ul>
         </div>
@@ -74,6 +74,7 @@ const activeMarks = computed(() =>
     @include respond-to(mobile) {
         flex-direction: column;
         align-items: center;
+        gap: 0;
     }
 }
 </style>
