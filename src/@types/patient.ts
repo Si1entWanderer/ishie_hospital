@@ -20,6 +20,6 @@ export type TTherapyMark = {
     id: ETherapyMarksIds
     image: string
     name: string
-    grade: ETherapyMarksGrades,
+    grade: ETherapyMarksGrades
     description?: string
 }

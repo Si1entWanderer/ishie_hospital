@@ -11,10 +11,10 @@ import rouletteImage from '@/assets/images/rewards/gamble.png'
 import views300Image from '@/assets/images/rewards/clip300.png'
 import donateOptionImage from '@/assets/images/rewards/donation.png'
 
-import frameLegendaryImage from '@/assets/images/frames/legendary.png';
-import frameEpicImage from '@/assets/images/frames/epic.png';
-import frameRareImage from '@/assets/images/frames/rare.png';
-import frameUncommonImage from '@/assets/images/frames/uncommon.png';
+import frameLegendaryImage from '@/assets/images/frames/legendary.png'
+import frameEpicImage from '@/assets/images/frames/epic.png'
+import frameRareImage from '@/assets/images/frames/rare.png'
+import frameUncommonImage from '@/assets/images/frames/uncommon.png'
 
 export const SOCIAL_LINKS = [
     {
@@ -351,7 +351,7 @@ export const THERAPY_FRAME_BY_GRADE: Record<ETherapyMarksGrades, string> = {
     [ETherapyMarksGrades.legendary]: frameLegendaryImage,
     [ETherapyMarksGrades.epic]: frameEpicImage,
     [ETherapyMarksGrades.rare]: frameRareImage,
-    [ETherapyMarksGrades.uncommon]: frameUncommonImage
+    [ETherapyMarksGrades.uncommon]: frameUncommonImage,
 }
 
 export const ACTIVE_THERAPIES = [
