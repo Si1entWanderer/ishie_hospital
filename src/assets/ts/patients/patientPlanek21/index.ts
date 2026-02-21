@@ -1,0 +1,17 @@
+import type { TPatient } from '@/@types/patient'
+import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
+
+import placeholderAvatar from '@/assets/images/avatars/placeholderAvatar.jpg'
+import examination1 from './examinations/examination1'
+
+export const patientPlanek21: TPatient = {
+    id: '13518',
+    name: 'planek21',
+    image: placeholderAvatar,
+    sex: ESex.male,
+    birthDate: '[ДАННЫЕ УДАЛЕНЫ]',
+    residentalAddress: 'Twitch канал Ishie_j',
+    examinations: [examination1],
+    therapyMarks: [ETherapyMarksIds.donation3k],
+    registrationDate: 1771632000000,
+}
