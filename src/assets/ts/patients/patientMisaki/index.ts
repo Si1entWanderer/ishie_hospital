@@ -13,7 +13,11 @@ export const patientMisaki: TPatient = {
     birthDate: '18.01.2025',
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1],
-    therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.clip300],
+    therapyMarks: [
+        ETherapyMarksIds.pukaton2025,
+        ETherapyMarksIds.streak100,
+        ETherapyMarksIds.clip300,
+    ],
     staffName: STAFF_NAMES.misaki,
     registrationDate: 1764115200000,
 }
