@@ -15,7 +15,7 @@ export const patientAlyooha: TPatient = {
     birthDate: '11.05.2023',
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1, examination2],
-    therapyMarks: [ETherapyMarksIds.pukaton2025],
+    therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.streak100],
     staffName: STAFF_NAMES.alyooha,
     staffExperience: '3 года',
     registrationDate: 1763856000000,

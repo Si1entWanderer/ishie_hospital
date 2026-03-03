@@ -10,7 +10,7 @@ export const patientKunilika666: TPatient = {
     image: placeholderAvatar,
     sex: ESex.female,
     birthDate: '21.06.2025',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал kunilika666',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.roulette],
     registrationDate: 1767052800000,
