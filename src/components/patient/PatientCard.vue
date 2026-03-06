@@ -375,6 +375,7 @@ $border-color: var(--border-color, $pink-100);
     width: 100%;
     height: 100%;
     color: $dark-0;
+    object-fit: cover;
 }
 
 .patch {

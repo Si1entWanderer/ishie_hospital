@@ -18,6 +18,7 @@ import { patientSamr1na } from '@/assets/ts/patients/patientSamr1na'
 import { patientYounochkq } from '@/assets/ts/patients/patientYounochkq'
 import { patientYumekomoore } from '@/assets/ts/patients/patientYumekomoore'
 import { patientMrblackwolf1k_j } from '@/assets/ts/patients/patientMrblackwolf1k'
+import { patientAkaev1515 } from '@/assets/ts/patients/patientAkaev1515'
 
 export default [
     patientAlyooha,
@@ -40,4 +41,5 @@ export default [
     patientPlanek21,
     patientFullgir_77,
     patientMrblackwolf1k_j,
+    patientAkaev1515,
 ]
