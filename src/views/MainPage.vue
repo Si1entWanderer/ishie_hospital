@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BentoHospitalInfo from '@/components/hospital/BentoHospitalInfo.vue'
 import FaqBlock from '@/components/hospital/FaqBlock.vue'
 import PatientListBlock from '@/components/hospital/PatientListBlock.vue'
 import MainLayout from '@/layouts/MainLayout.vue'
@@ -7,6 +8,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
 <template>
     <MainLayout :class="$style.MainPage">
         <div :class="[$style.container, 'contianer']">
+            <BentoHospitalInfo />
             <PatientListBlock />
 
             <FaqBlock />

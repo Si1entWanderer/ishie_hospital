@@ -22,12 +22,14 @@ export const SOCIAL_LINKS = [
         name: 'Twitch',
         icon: EIcons.twitch,
         href: '//www.twitch.tv/ishie_j',
+        fill: '#8956fb',
     },
     {
         id: 2,
         name: 'Telegram',
         icon: EIcons.telegram,
         href: '//t.me/durdom_ishie_j',
+        fill: '#0088cc',
     },
 ]
 

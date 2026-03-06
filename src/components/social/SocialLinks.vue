@@ -9,6 +9,7 @@ import { SOCIAL_LINKS } from '@/assets/ts/constants'
             :class="$style.link"
             :key="link.id"
             :href="link.href"
+            :style="`color: ${link.fill}`"
             target="_blank"
         >
             <svg :class="$style.icon">

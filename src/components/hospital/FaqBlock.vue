@@ -96,7 +96,7 @@ const activeTherapies = computed(() =>
     margin: 0;
     color: $dark-0;
 
-    @include text(p2);
+    @include text(p2-b);
 }
 
 .therapyDescription {

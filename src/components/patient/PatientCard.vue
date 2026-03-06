@@ -407,7 +407,7 @@ $border-color: var(--border-color, $pink-100);
     margin: 0;
     color: $dark-0;
 
-    @include text(p2);
+    @include text(p2-b);
 
     @include respond-to(mobile) {
         @include text(p3-b);
