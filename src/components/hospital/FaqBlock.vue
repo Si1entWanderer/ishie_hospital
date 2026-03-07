@@ -45,7 +45,7 @@ const activeTherapies = computed(() =>
 .title {
     margin-top: 0;
     margin-bottom: 0;
-    color: $pink-0;
+    color: $main-0;
 
     @include text(t1);
 }

@@ -106,7 +106,7 @@ async function onShareClick() {
         top: -12px;
         right: 0;
         padding: 8px 12px;
-        border: 4px solid $pink-100;
+        border: 4px solid $main-100;
         border-radius: 12px;
         background-color: white;
         opacity: 0;

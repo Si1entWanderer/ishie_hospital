@@ -73,8 +73,8 @@ function onInput(event: Event) {
     justify-content: center;
     margin: 0;
     padding: 8px 24px;
-    border-bottom: 2px solid $pink-100;
-    color: $pink-0;
+    border-bottom: 2px solid $main-100;
+    color: $main-0;
 
     @include text(t2);
 }
@@ -109,14 +109,14 @@ function onInput(event: Event) {
 
 .label {
     margin: 0;
-    color: $pink-0;
+    color: $main-0;
 
     @include text(t2);
 }
 
 .input {
     border: none;
-    border-bottom: 2px solid $pink-100;
+    border-bottom: 2px solid $main-100;
     color: $dark-0;
 
     @include text(l1);

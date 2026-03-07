@@ -37,7 +37,7 @@ withDefaults(
 .title {
     margin: 0;
     text-transform: uppercase;
-    color: var(--title-color, $pink-0);
+    color: var(--title-color, $main-0);
 
     @include text(t1);
 

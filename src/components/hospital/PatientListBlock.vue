@@ -39,7 +39,7 @@ const TITLE = 'СПИСОК ПАЦИЕНТОВ'
 
 .title {
     margin: 0;
-    color: $pink-0;
+    color: $main-0;
 
     @include text(t1);
 
@@ -66,7 +66,7 @@ const TITLE = 'СПИСОК ПАЦИЕНТОВ'
 .link {
     display: flex;
     padding: 8px 24px;
-    border: 4px solid $pink-100;
+    border: 4px solid $main-100;
     border-radius: 24px;
     text-decoration: none;
     color: $dark-0;

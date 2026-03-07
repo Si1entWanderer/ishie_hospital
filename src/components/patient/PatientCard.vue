@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, ref, useCssModule } from 'vue'
 
-import type { TPatient } from '@/@types/patient'
-import { EIcons, EPatientCardThemes } from '@/assets/ts/enums'
+import type { IPatient } from '@/@types/patient'
+import { EPatientCardThemes } from '@/assets/ts/enums'
 
 import SEAL_IMAGE from '@/assets/images/seal.png'
 
@@ -10,8 +10,8 @@ import BlockWrapper from '@/components/common/BlockWrapper.vue'
 import TextBlock from '@/components/common/TextBlock.vue'
 import VButton from '@/components/ui/VButton.vue'
 import StaffStatus from '@/components/patient/StaffStatus.vue'
+import PatientAvatar from '@/components/patient/PatientAvatar.vue'
 
-const PATIENT_IMAGE_ALT = 'фото пациента'
 const SEAL_IMAGE_ALT = 'шуточная печать'
 
 const FIRST_EXAMINATION_LABEL = 'Первичный'
@@ -30,7 +30,7 @@ const $style = useCssModule()
 
 const props = withDefaults(
     defineProps<{
-        patient: TPatient
+        patient: IPatient
         theme?: EPatientCardThemes
     }>(),
     {
@@ -82,18 +82,7 @@ function getNumberClassList(index: number) {
                 {{ activeTitle }}
             </h2>
 
-            <div :class="$style.avatar">
-                <img
-                    :key="patient.id"
-                    :class="$style.image"
-                    :src="patient?.image"
-                    :alt="PATIENT_IMAGE_ALT"
-                />
-
-                <svg :class="$style.patch">
-                    <use :xlink:href="EIcons.heart" />
-                </svg>
-            </div>
+            <PatientAvatar :class="$style.avatar" :image="patient?.image" />
 
             <StaffStatus v-if="patient?.staffName" :staff-name="patient.staffName" />
 
@@ -203,8 +192,8 @@ function getNumberClassList(index: number) {
 </template>
 
 <style lang="scss" module>
-$light-backgound-color: var(--light-backgound-color, $pink-300);
-$border-color: var(--border-color, $pink-100);
+$light-backgound-color: var(--light-backgound-color, $main-300);
+$border-color: var(--border-color, $main-100);
 
 .PatientCard {
     position: relative;
@@ -367,23 +356,6 @@ $border-color: var(--border-color, $pink-100);
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
-    border: 12px solid white;
-    background-color: white;
-}
-
-.image {
-    width: 100%;
-    height: 100%;
-    color: $dark-0;
-}
-
-.patch {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 89px;
-    height: 78px;
-    transform: translate(35%, 35%);
 }
 
 .dataBlock {

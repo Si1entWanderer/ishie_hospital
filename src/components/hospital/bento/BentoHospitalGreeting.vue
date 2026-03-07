@@ -172,7 +172,7 @@ const [twitchSocial, telegramSocial] = SOCIAL_LINKS
     flex-basis: 100%;
     padding: 12px 24px;
     border-radius: 24px;
-    background-color: $pink-0;
+    background-color: $main-0;
     color: white;
     text-align: center;
 

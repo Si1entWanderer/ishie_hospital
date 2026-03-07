@@ -1,7 +1,7 @@
 import type { TTextBlock } from '@/@types/blocks'
 import { ESex, ETherapyMarksIds, ETherapyMarksGrades } from '@/assets/ts/enums'
 
-export type TPatient = {
+export interface IPatient {
     id: string
     name: string
     image: string

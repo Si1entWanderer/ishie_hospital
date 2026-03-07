@@ -65,7 +65,7 @@ import SocialLinks from '@/components/social/SocialLinks.vue'
         right: 20px;
         display: flex;
         padding: 12px 24px;
-        border: 4px solid $pink-100;
+        border: 4px solid $main-100;
         border-radius: 32px;
         background-color: white;
     }

@@ -32,30 +32,31 @@ const classList = computed(() => [$style[`_style-${props.style}`]])
     gap: var(--button-gap, 4px);
     text-decoration: none;
     cursor: pointer;
-    transition: 0.3s transform;
+    transition: 0.3s box-shadow;
 
     @include text(p3);
 
     &:hover {
-        transform: scale(1.05);
+        box-shadow: 0 0 0 8px rgb(from var(--button-hover-color, $main-100) r g b / 20%);
     }
 
     &:active {
-        transform: scale(1);
+        box-shadow: 0 0 0 6px rgb(from var(--button-hover-color, $main-100) r g b / 20%);
     }
 
     &._style-default {
         padding: 8px 20px;
-        border: 4px solid $pink-100;
+        border: 4px solid $main-100;
         border-radius: 24px;
         background-color: white;
         color: $dark-0;
     }
 
     &._style-filled {
+        --button-hover-color: var(--fill-color, $main-0);
         padding: 8px 20px;
         border-radius: 24px;
-        background-color: var(--fill-color, $pink-0);
+        background-color: var(--fill-color, $main-0);
         color: white;
 
         @include text(p2-b);

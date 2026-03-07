@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-import type { TPatient } from '@/@types/patient'
+import type { IPatient } from '@/@types/patient'
 
 import { THERAPY_MARKS } from '@/assets/ts/constants'
 
@@ -11,7 +11,7 @@ import PatientAward from '@/components/patient/PatientAward.vue'
 const TITLE = 'ОТМЕТКИ О ПРОЙДЕННЫХ ТЕРАПИЯХ'
 
 const props = defineProps<{
-    patient: TPatient
+    patient: IPatient
 }>()
 
 const activeMarks = computed(() =>
@@ -43,8 +43,8 @@ const activeMarks = computed(() =>
 .header {
     padding: 24px 40px 20px;
     border-radius: 46px 46px 0 0;
-    border-bottom: 2px solid $pink-100;
-    background-color: $pink-300;
+    border-bottom: 2px solid $main-100;
+    background-color: $main-300;
     color: $dark-0;
 
     @include text(t2);

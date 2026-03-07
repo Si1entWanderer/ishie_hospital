@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
-import type { TPatient } from '@/@types/patient'
+import type { IPatient } from '@/@types/patient'
 
 import PATIENTS from '@/assets/ts/patients'
 
@@ -17,7 +17,7 @@ const router = useRouter()
 const activePatientIndex = computed(() =>
     PATIENTS.findIndex((patient) => patient.id === route.params.id),
 )
-const activePatient = computed(() => PATIENTS[activePatientIndex.value] as TPatient)
+const activePatient = computed(() => PATIENTS[activePatientIndex.value] as IPatient)
 const prevPatient = computed(() =>
     PATIENTS[activePatientIndex.value - 1]
         ? PATIENTS[activePatientIndex.value - 1]

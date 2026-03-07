@@ -31,7 +31,7 @@ const emit = defineEmits<{
 }
 
 .button {
-    border: 4px solid $pink-100;
+    border: 4px solid $main-100;
     border-radius: 24px;
     background: white;
     color: $dark-0;

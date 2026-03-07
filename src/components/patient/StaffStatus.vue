@@ -36,7 +36,7 @@ withDefaults(
     gap: 24px;
     padding: 8px 12px;
     border-radius: 8px;
-    background-color: $pink-0;
+    background-color: $main-0;
 }
 
 .content {

@@ -21,19 +21,21 @@ defineProps<{
     justify-content: center;
     align-items: center;
     padding: 6px;
-    border: 4px solid $pink-100;
+    border: 4px solid $main-100;
     border-radius: 12px;
     background-color: white;
     color: $dark-0;
     cursor: pointer;
-    transition: 0.3s transform;
+    transition: 0.3s box-shadow;
+
+    @include text(p3);
 
     &:hover {
-        transform: scale(1.05);
+        box-shadow: 0 0 0 8px rgb(from var(--button-hover-color, $main-100) r g b / 20%);
     }
 
     &:active {
-        transform: scale(1);
+        box-shadow: 0 0 0 6px rgb(from var(--button-hover-color, $main-100) r g b / 20%);
     }
 }
 

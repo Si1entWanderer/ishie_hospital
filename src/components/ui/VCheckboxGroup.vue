@@ -57,7 +57,7 @@ function onChecked(event: Event) {
 
 .title {
     margin: 0;
-    color: $pink-0;
+    color: $main-0;
 
     @include text(t2);
 }
@@ -91,7 +91,7 @@ function onChecked(event: Event) {
     flex-shrink: 0;
     width: 20px;
     height: 20px;
-    border: 2px solid $pink-100;
+    border: 2px solid $main-100;
     border-radius: 4px;
     transition: 0.3s transform;
 

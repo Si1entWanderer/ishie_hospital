@@ -35,7 +35,7 @@ const CLINIC_DESCRIPTION = 'Лечебное профилактическое у
 <style lang="scss" module>
 .TheHeader {
     padding: 12px 0;
-    border-bottom: 4px solid $pink-100;
+    border-bottom: 4px solid $main-100;
     background: white;
 }
 

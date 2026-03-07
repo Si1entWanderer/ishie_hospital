@@ -19,3 +19,5 @@ export enum EButtonStyles {
 }
 
 export type EButtonTag = 'a' | 'button'
+
+export type TSize = 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge'

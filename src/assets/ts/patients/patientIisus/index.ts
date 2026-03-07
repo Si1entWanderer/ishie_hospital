@@ -1,4 +1,4 @@
-import type { TPatient } from '@/@types/patient'
+import type { IPatient } from '@/@types/patient'
 import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
 
 import iisusAvatar from '@/assets/images/avatars/iisus.jpg'
@@ -6,7 +6,7 @@ import { STAFF_NAMES } from '@/assets/ts/constants'
 import examination1 from './examinations/examination1'
 import examination2 from './examinations/examination2'
 
-export const patientIisus: TPatient = {
+export const patientIisus: IPatient = {
     id: '43434',
     name: 'iisus_0001_j',
     image: iisusAvatar,
