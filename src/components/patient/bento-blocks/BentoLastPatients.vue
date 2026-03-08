@@ -6,7 +6,7 @@ import PatientPreviewLink from '@/components/patient/PatientPreviewLink.vue'
 const BLOCK_TITLE = 'Последние пациенты'
 const PATIENTS_COUNT = 3
 
-const lastPatients = patients.slice(PATIENTS_COUNT * -1)
+const lastPatients = patients.slice(PATIENTS_COUNT * -1).reverse()
 </script>
 
 <template>
