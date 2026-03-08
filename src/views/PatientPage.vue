@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 import type { IPatient } from '@/@types/patient'
@@ -33,6 +33,22 @@ function onClickNext() {
 function onClickPrev() {
     router.push({ path: `/patients/${prevPatient.value?.id}` })
 }
+
+function checkPatientsExistance(newId: string | string[] | undefined) {
+    const currentPatient = PATIENTS.find((patient) => patient.id === newId)
+    if (!currentPatient) {
+        router.push('/')
+    }
+}
+
+checkPatientsExistance(route.params.id)
+
+watch(
+    () => route.params.id,
+    (newId) => {
+        checkPatientsExistance(newId)
+    },
+)
 </script>
 
 <template>
@@ -46,16 +62,17 @@ function onClickPrev() {
 
             <Transition name="fade" mode="out-in">
                 <PatientCard
+                    v-if="activePatient?.id"
                     :class="$style.patientCard"
-                    :key="activePatient.id"
+                    :key="activePatient?.id"
                     :patient="activePatient"
                 />
             </Transition>
 
             <Transition name="fade" mode="out-in">
                 <PatientTherapyBlock
-                    v-if="activePatient.therapyMarks?.length"
-                    :key="activePatient.id"
+                    v-if="activePatient?.therapyMarks?.length"
+                    :key="activePatient?.id"
                     :patient="activePatient"
                 />
             </Transition>

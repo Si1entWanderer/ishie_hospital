@@ -1,6 +1,7 @@
 @use 'sass:map';
 
 $screen-sizes: (
+    'mobile-s': 420px,
     'mobile': 720px,
     'tablet-s': 1024px,
     'tablet': 1280px,

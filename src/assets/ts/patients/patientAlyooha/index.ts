@@ -1,7 +1,6 @@
 import type { IPatient } from '@/@types/patient'
 import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
 
-import placeholderAvatar from '@/assets/images/avatars/placeholderAvatar.jpg'
 import examination1 from './examinations/examination1'
 import examination2 from './examinations/examination2'
 
@@ -10,7 +9,7 @@ import { STAFF_NAMES } from '@/assets/ts/constants'
 export const patientAlyooha: IPatient = {
     id: '94108',
     name: 'alyooha',
-    image: placeholderAvatar,
+    image: null,
     sex: ESex.male,
     birthDate: '11.05.2023',
     residentalAddress: 'Twitch канал Ishie_j',

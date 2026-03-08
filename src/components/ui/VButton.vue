@@ -53,7 +53,7 @@ const classList = computed(() => [$style[`_style-${props.style}`]])
     }
 
     &._style-filled {
-        --button-hover-color: var(--fill-color, $main-0);
+        --button-hover-color: var(--fill-color, #{$main-0});
         padding: 8px 20px;
         border-radius: 24px;
         background-color: var(--fill-color, $main-0);

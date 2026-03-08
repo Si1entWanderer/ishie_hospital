@@ -4,7 +4,7 @@ import { ESex, ETherapyMarksIds, ETherapyMarksGrades } from '@/assets/ts/enums'
 export interface IPatient {
     id: string
     name: string
-    image: string
+    image: string | null
     sex?: ESex
     birthDate?: string
     residentalAddress?: string

@@ -95,15 +95,17 @@ withDefaults(
     ul {
         margin: 0;
         padding-left: 28px;
+
+        li {
+            @include text(p3);
+
+            @media print {
+                @include text(p4);
+            }
+        }
     }
 
     li {
-        @include text(p3);
-
-        @media print {
-            @include text(p4);
-        }
-
         &:not(:last-child) {
             margin-bottom: 4px;
         }

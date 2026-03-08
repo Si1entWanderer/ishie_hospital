@@ -6,6 +6,7 @@ import PatientPage from '@/views/PatientPage.vue'
 import PatientsPage from '@/views/PatientsPage.vue'
 import TokensPage from '@/views/TokensPage.vue'
 import RulesPage from '@/views/RulesPage.vue'
+import ErrorPage from '@/views/ErrorPage.vue'
 
 const router = createRouter({
     history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,11 @@ const router = createRouter({
         {
             path: '/rules',
             component: RulesPage,
+        },
+        {
+            path: '/:pathMatch(.*)*',
+            name: 'NotFound',
+            component: ErrorPage,
         },
     ],
     scrollBehavior() {

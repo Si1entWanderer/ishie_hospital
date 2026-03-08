@@ -7,7 +7,6 @@ import { EIcons } from '@/assets/ts/enums'
 import VButton from '@/components/ui/VButton.vue'
 import VIconButton from '@/components/ui/VIconButton.vue'
 import VNavigation from '@/components/ui/VNavigation.vue'
-import links from '@/assets/ts/links'
 
 const PATIENTS_BUTTON_TEXT = '← К списку пациентов'
 
@@ -50,11 +49,11 @@ async function onShareClick() {
 
 <template>
     <div :class="$style.ActionsBlock">
-        <VButton :class="$style.button" tag="router-link" :to="links.patients">
+        <VButton :class="$style.button" tag="router-link" to="/patients">
             {{ PATIENTS_BUTTON_TEXT }}
         </VButton>
 
-        <VButton :class="[$style.button, $style._back]" tag="router-link" to="/">
+        <VButton :class="[$style.button, $style._mainpage]" tag="router-link" to="/">
             {{ MAINPAGE_BUTTON_TEXT }}
         </VButton>
 
@@ -97,7 +96,7 @@ async function onShareClick() {
         width: 100%;
     }
 
-    &._back {
+    &._mainpage {
         margin-right: auto;
 
         @include respond-to(mobile) {
