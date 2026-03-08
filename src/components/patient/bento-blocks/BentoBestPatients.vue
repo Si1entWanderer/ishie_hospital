@@ -3,7 +3,7 @@ import { onUnmounted, ref } from 'vue'
 import { EffectCreative } from 'swiper/modules'
 
 import { EIcons } from '@/assets/ts/enums'
-import type { Swiper as SwiperType, SwiperOptions } from 'swiper/types'
+import type { Swiper as SwiperType } from 'swiper/types'
 
 import patients from '@/assets/ts/patients'
 
@@ -15,7 +15,7 @@ import 'swiper/css'
 import 'swiper/css/effect-creative'
 
 const BLOCK_TITLE = 'Лучшие пациенты'
-const SWIPER_OPTIONS: SwiperOptions = {
+const SWIPER_OPTIONS = {
     modules: [EffectCreative],
     effect: 'creative',
     slidesPerView: 1,
@@ -80,6 +80,7 @@ onUnmounted(() => {
                 </svg>
             </button>
 
+            <!-- eslint disable -->
             <Swiper :class="$style.slider" v-bind="SWIPER_OPTIONS" @swiper="onSwiperInit">
                 <SwiperSlide
                     v-for="patient in bestPatients"
