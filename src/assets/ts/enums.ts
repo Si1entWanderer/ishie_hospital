@@ -9,6 +9,10 @@ export enum EIcons {
     arrowBackAlt = '#arrow-back-alt',
     arrowForwardAlt = '#arrow-forward-alt',
     medicalCross = '#medical-cross',
+    rules = '#rules',
+    editDocument = '#edit-document',
+    cup = '#cup',
+    personHeart = '#person-heart',
 }
 
 export enum ESex {

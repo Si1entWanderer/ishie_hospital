@@ -39,7 +39,7 @@ import SocialLinks from '@/components/social/SocialLinks.vue'
     flex-direction: column;
     flex-grow: 1;
     gap: 20px;
-    padding: 48px 0;
+    padding: 24px 0 48px;
     background-image: url('../assets/images/deksktop-background.jpg');
 
     @include respond-to(tablet) {
@@ -47,7 +47,7 @@ import SocialLinks from '@/components/social/SocialLinks.vue'
     }
 
     @include respond-to(mobile) {
-        padding: 36px 0 64px;
+        padding: 24px 0 64px;
         background-image: url('../assets/images/mobile-background.jpg');
     }
 

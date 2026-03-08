@@ -39,6 +39,11 @@ defineProps<IProps>()
     padding: 20px;
     border-radius: 24px;
     background-color: $main-300;
+    transition: 0.3s box-shadow;
+
+    &:hover {
+        box-shadow: inset 0 0 0 4px $main-200;
+    }
 }
 
 .avatar {

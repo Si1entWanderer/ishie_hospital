@@ -25,16 +25,16 @@ withDefaults(defineProps<IProps>(), {
 
 <style lang="scss" module>
 .PatientAvatar {
+    display: flex;
     position: relative;
-    height: auto;
-    aspect-ratio: 1/1;
     border: var(--avatar-border-size, 12px) solid white;
     background-color: white;
 }
 
 .image {
     width: 100%;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
     color: $dark-0;
 }
 

@@ -1,4 +1,4 @@
-import type { TTextBlock } from '@/@types/blocks'
+import type { ITextBlock } from '@/@types/blocks'
 import type { TCheckboxGroupData } from '@/@types/ui'
 import { EIcons, ETherapyMarksIds, ETherapyMarksGrades } from '@/assets/ts/enums'
 import type { TTherapyMark } from '@/@types/patient'
@@ -365,15 +365,15 @@ export const ACTIVE_THERAPIES = [
     ETherapyMarksIds.donation3k,
 ]
 
-export const FAQ_TEXTS: TTextBlock[] = [
-    {
-        id: 1,
-        title: 'КАК ПОПАСТЬ НА&nbsp;ЛЕЧЕНИЕ?',
-        description: `Чтобы попасть в клинику нужно получить достижение на Twitch канале Ishie_j (направление на терапию)
-                Список доступных на данный момент терапий:
-            `,
-    },
-]
+export const TOKENS_PAGE_DATA: ITextBlock = {
+    id: 1,
+    title: 'КАК ПОПАСТЬ НА&nbsp;ЛЕЧЕНИЕ?',
+    description: `
+            Чтобы попасть в&nbsp;клинику нужно получить
+            достижение на&nbsp;Twitch канале <b>Ishie_j</b> (направление&nbsp;на&nbsp;терапию)
+            Список доступных на&nbsp;данный момент терапий:
+        `,
+}
 
 export const STAFF_NAMES = {
     alyooha: 'Дежурный батя',
@@ -382,3 +382,5 @@ export const STAFF_NAMES = {
     misaki: 'Нейро-терапевт',
     nutvis: 'Boobs inspector',
 }
+
+export const MAINPAGE_BUTTON_TEXT = 'На главную'

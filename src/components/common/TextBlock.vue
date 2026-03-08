@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { TTextBlock } from '@/@types/blocks'
+import type { ITextBlock } from '@/@types/blocks'
 import { ETitleTag } from '@/assets/ts/enums'
 
 withDefaults(
     defineProps<{
-        data: TTextBlock
+        data: ITextBlock
         titleTag?: ETitleTag
     }>(),
     {
@@ -27,10 +27,10 @@ withDefaults(
 .TextBlock {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 
     @include respond-to(mobile) {
-        gap: 8px;
+        gap: 16px;
     }
 }
 
@@ -63,6 +63,12 @@ withDefaults(
         @include text(p4);
     }
 
+    & > * {
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
     h1,
     h2,
     h3,
@@ -75,7 +81,32 @@ withDefaults(
 
     p {
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $main-0;
+    }
+
+    b {
+        color: $main-0;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 28px;
+    }
+
+    li {
+        @include text(p3);
+
+        @media print {
+            @include text(p4);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
     }
 }
 </style>

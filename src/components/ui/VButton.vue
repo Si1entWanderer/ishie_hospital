@@ -26,7 +26,7 @@ const classList = computed(() => [$style[`_style-${props.style}`]])
 
 <style lang="scss" module>
 .VButton {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: var(--button-gap, 4px);

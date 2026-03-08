@@ -86,11 +86,7 @@ onUnmounted(() => {
                     :class="$style.slide"
                     :key="patient.id"
                 >
-                    <RouterLink
-                        :class="$style.link"
-                        target="_blank"
-                        :to="`/patients/${patient.id}`"
-                    >
+                    <RouterLink :class="$style.link" :to="`/patients/${patient.id}`">
                         <PatientPreviewCard :data="patient" />
                     </RouterLink>
                 </SwiperSlide>
@@ -116,6 +112,10 @@ onUnmounted(() => {
     gap: 4px;
     width: 100%;
     padding: 24px;
+}
+
+.slider {
+    border-radius: 24px;
 }
 
 .link {

@@ -2,6 +2,7 @@
 
 $screen-sizes: (
     'mobile': 720px,
+    'tablet-s': 1024px,
     'tablet': 1280px,
     'desktop': 1440px,
 );
@@ -33,6 +34,10 @@ $screen-sizes: (
         font-size: 20px;
         line-height: 28px;
         font-weight: normal;
+    } @else if $text-type == 'p1-b' {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: bold;
     } @else if $text-type == 'p2' {
         font-size: 20px;
         line-height: 24px;

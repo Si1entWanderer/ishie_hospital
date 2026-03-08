@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
-
 import PATIENTS from '@/assets/ts/patients'
 
 import BlockWrapper from '@/components/common/BlockWrapper.vue'
+import PatientPreviewLink from '@/components/patient/PatientPreviewLink.vue'
 
 const TITLE = 'СПИСОК ПАЦИЕНТОВ'
 </script>
@@ -16,9 +15,7 @@ const TITLE = 'СПИСОК ПАЦИЕНТОВ'
 
         <ul :class="$style.list">
             <li v-for="patient in PATIENTS" :class="$style.item" :key="patient.id">
-                <RouterLink :to="`/patients/${patient.id}`" :class="$style.link">
-                    {{ patient.name }}&nbsp;&rarr;
-                </RouterLink>
+                <PatientPreviewLink :data="patient" size="large" />
             </li>
         </ul>
     </BlockWrapper>
@@ -29,10 +26,9 @@ const TITLE = 'СПИСОК ПАЦИЕНТОВ'
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 40px;
+    padding: 32px 40px;
 
     @include respond-to(mobile) {
-        gap: 8px;
         padding: 24px;
     }
 }
@@ -49,18 +45,26 @@ const TITLE = 'СПИСОК ПАЦИЕНТОВ'
 }
 
 .list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin: 0;
     padding: 0;
     list-style: none;
 
-    @include respond-to(mobile) {
-        flex-direction: column;
-        align-items: flex-start;
+    @include respond-to(tablet-s) {
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
+
+    @include respond-to(mobile) {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+.item {
+    min-width: 0;
 }
 
 .link {

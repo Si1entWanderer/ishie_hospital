@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { computed, ref, useCssModule } from 'vue'
 
+import { MAINPAGE_BUTTON_TEXT } from '@/assets/ts/constants'
 import { EIcons } from '@/assets/ts/enums'
 
 import VButton from '@/components/ui/VButton.vue'
 import VIconButton from '@/components/ui/VIconButton.vue'
 import VNavigation from '@/components/ui/VNavigation.vue'
+import links from '@/assets/ts/links'
 
-const BACK_BUTTON_TEXT = '← К списку больных'
+const PATIENTS_BUTTON_TEXT = '← К списку пациентов'
 
 const emit = defineEmits<{
     clickPrev: []
@@ -48,11 +50,13 @@ async function onShareClick() {
 
 <template>
     <div :class="$style.ActionsBlock">
-        <RouterLink :class="$style.back" to="/">
-            <VButton :class="$style.backButton">
-                {{ BACK_BUTTON_TEXT }}
-            </VButton>
-        </RouterLink>
+        <VButton :class="$style.button" tag="router-link" :to="links.patients">
+            {{ PATIENTS_BUTTON_TEXT }}
+        </VButton>
+
+        <VButton :class="[$style.button, $style._back]" tag="router-link" to="/">
+            {{ MAINPAGE_BUTTON_TEXT }}
+        </VButton>
 
         <div :class="$style.actions">
             <VIconButton :icon="EIcons.print" @click="onPrintClick" />
@@ -73,30 +77,33 @@ async function onShareClick() {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
 
     @include respond-to(mobile) {
         flex-direction: column;
         align-items: flex-end;
-        gap: 12px;
+        gap: 8px;
     }
-}
-
-.back {
-    text-decoration: none;
-
-    @include respond-to(mobile) {
-        width: 100%;
-    }
-}
-
-.backButton {
-    width: 100%;
 }
 
 .actions {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.button {
+    @include respond-to(mobile) {
+        width: 100%;
+    }
+
+    &._back {
+        margin-right: auto;
+
+        @include respond-to(mobile) {
+            margin-right: 0;
+        }
+    }
 }
 
 .share {

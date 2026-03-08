@@ -1,4 +1,4 @@
-import type { TTextBlock } from '@/@types/blocks'
+import type { ITextBlock } from '@/@types/blocks'
 import { ESex, ETherapyMarksIds, ETherapyMarksGrades } from '@/assets/ts/enums'
 
 export interface IPatient {
@@ -8,8 +8,8 @@ export interface IPatient {
     sex?: ESex
     birthDate?: string
     residentalAddress?: string
-    examination?: TTextBlock[]
-    examinations?: TTextBlock[][]
+    examination?: ITextBlock[]
+    examinations?: ITextBlock[][]
     therapyMarks?: ETherapyMarksIds[]
     staffName?: string
     staffExperience?: string

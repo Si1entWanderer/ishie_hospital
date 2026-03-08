@@ -242,7 +242,7 @@ $border-color: var(--border-color, $main-100);
     flex-grow: 1;
     gap: 36px;
     padding: 40px 40px 40px 24px;
-    border-radius: 0 46px 46px 0;
+    border-radius: 0 52px 52px 0;
     background: white;
 
     @include respond-to(mobile) {

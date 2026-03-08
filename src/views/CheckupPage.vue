@@ -6,12 +6,12 @@ import {
     LOCALSTORAGE_FORM_KEY,
     LOCALSTORAGE_NAME_KEY,
     FORM_FIELDS,
+    MAINPAGE_BUTTON_TEXT,
 } from '@/assets/ts/constants'
 
 import { createAndDownloadTextFile } from '@/utils/createAndDownloadTextFile'
 
 import CheckupBlock, { type TCheckupBlockEmit } from '@/components/hospital/CheckupBlock.vue'
-import MainLayout from '@/layouts/MainLayout.vue'
 import VButton from '@/components/ui/VButton.vue'
 
 const DOWNLOAD_BUTTON_TEXT = 'Скачать'
@@ -92,14 +92,18 @@ onMounted(() => {
 </script>
 
 <template>
-    <MainLayout :class="$style.CheckupPage">
+    <div :class="$style.CheckupPage">
         <div :class="[$style.container, 'container']">
             <div :class="$style.buttons">
-                <VButton @click="onClearClick">
+                <VButton :class="[$style.button, $style._back]" tag="router-link" to="/">
+                    {{ MAINPAGE_BUTTON_TEXT }}
+                </VButton>
+
+                <VButton :class="$style.button" @click="onClearClick">
                     {{ CLEAR_BUTTON_TEXT }}
                 </VButton>
 
-                <VButton @click="onDownloadClick">
+                <VButton :class="$style.button" @click="onDownloadClick">
                     {{ DOWNLOAD_BUTTON_TEXT }}
                 </VButton>
             </div>
@@ -110,7 +114,7 @@ onMounted(() => {
                 @change:name="onNameInput"
             />
         </div>
-    </MainLayout>
+    </div>
 </template>
 
 <style lang="scss" module>
@@ -121,20 +125,32 @@ onMounted(() => {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-
-    @include respond-to(mobile) {
-        gap: 12px;
-    }
+    gap: 24px;
 }
 
 .buttons {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 24px;
 
     @include respond-to(mobile) {
-        gap: 12px;
+        gap: 8px 4px;
+    }
+}
+
+.button {
+    @include respond-to(mobile) {
+        flex-grow: 1;
+    }
+
+    &._back {
+        margin-right: auto;
+
+        @include respond-to(mobile) {
+            width: 100%;
+            margin-right: 0;
+        }
     }
 }
 </style>

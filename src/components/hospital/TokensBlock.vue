@@ -1,20 +1,26 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { FAQ_TEXTS, THERAPY_MARKS, ACTIVE_THERAPIES } from '@/assets/ts/constants'
+
+import { TOKENS_PAGE_DATA, THERAPY_MARKS, ACTIVE_THERAPIES } from '@/assets/ts/constants'
+import { ETitleTag } from '@/assets/ts/enums'
 
 import BlockWrapper from '@/components/common/BlockWrapper.vue'
 import PatientAward from '@/components/patient/PatientAward.vue'
+import TextBlock from '@/components/common/TextBlock.vue'
 
 const activeTherapies = computed(() =>
     THERAPY_MARKS.filter((mark) => ACTIVE_THERAPIES.includes(mark.id)),
 )
+const textContent = {
+    id: 1,
+    title: TOKENS_PAGE_DATA.title,
+    description: TOKENS_PAGE_DATA.description,
+}
 </script>
 
 <template>
     <BlockWrapper :class="$style.FaqBlock">
-        <h2 v-html="FAQ_TEXTS[0]?.title" :class="$style.title" />
-
-        <div v-html="FAQ_TEXTS[0]?.description" :class="$style.description" />
+        <TextBlock :data="textContent" :title-tag="ETitleTag.h2" />
 
         <ul :class="$style.therapies">
             <li v-for="therapy in activeTherapies" :key="therapy.id" :class="$style.therapy">
@@ -42,27 +48,15 @@ const activeTherapies = computed(() =>
     }
 }
 
-.title {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: $main-0;
-
-    @include text(t1);
-}
-
-.description {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: $dark-0;
-
-    @include text(p1);
-}
-
 .therapies {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+
+    @include respond-to(mobile) {
+        gap: 32px;
+    }
 }
 
 .therapy {

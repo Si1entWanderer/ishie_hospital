@@ -8,7 +8,6 @@ import PATIENTS from '@/assets/ts/patients'
 
 import ActionsBlock from '@/components/patient/ActionsBlock.vue'
 import PatientCard from '@/components/patient/PatientCard.vue'
-import MainLayout from '@/layouts/MainLayout.vue'
 import PatientTherapyBlock from '@/components/patient/PatientTherapyBlock.vue'
 
 const route = useRoute()
@@ -37,7 +36,7 @@ function onClickPrev() {
 </script>
 
 <template>
-    <MainLayout :class="$style.PatientPage">
+    <div :class="$style.PatientPage">
         <div :class="[$style.container, 'container']">
             <ActionsBlock
                 :class="$style.actions"
@@ -61,7 +60,7 @@ function onClickPrev() {
                 />
             </Transition>
         </div>
-    </MainLayout>
+    </div>
 </template>
 
 <style lang="scss" module>
@@ -73,10 +72,6 @@ function onClickPrev() {
     display: flex;
     flex-direction: column;
     gap: 24px;
-
-    @include respond-to(mobile) {
-        gap: 12px;
-    }
 }
 
 .actions {

@@ -18,6 +18,6 @@ export enum EButtonStyles {
     filled = 'filled',
 }
 
-export type EButtonTag = 'a' | 'button'
+export type EButtonTag = 'a' | 'button' | 'router-link'
 
 export type TSize = 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge'
