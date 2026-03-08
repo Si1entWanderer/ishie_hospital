@@ -16,6 +16,7 @@ export const patientIisus: IPatient = {
     examinations: [examination1, examination2],
     therapyMarks: [
         ETherapyMarksIds.pukaton2025,
+        ETherapyMarksIds.streak100,
         ETherapyMarksIds.clip300,
         ETherapyMarksIds.donation3k,
     ],

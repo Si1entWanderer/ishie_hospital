@@ -6,7 +6,7 @@ import placeholderAvatar from '@/assets/images/avatars/placeholderAvatar.jpg'
 const PATIENT_IMAGE_ALT = 'фото пациента'
 
 interface IProps {
-    image?: string
+    image?: string | null
     hideIcon?: boolean
 }
 
