@@ -298,7 +298,7 @@ export const THERAPY_MARKS: TTherapyMark[] = [
         name: 'Ишемия внутривенно',
         grade: ETherapyMarksGrades.legendary,
         description:
-            'Терапия для тех, кого ни перед чем не остановить. Дается за сбор всех терапий',
+            'Терапия для тех, кого ни перед чем не остановить. Дается за сбор всех жетонов терапии',
     },
     {
         id: ETherapyMarksIds.pukaton2025,
@@ -370,8 +370,8 @@ export const TOKENS_PAGE_DATA: ITextBlock = {
     title: 'КАК ПОПАСТЬ НА&nbsp;ЛЕЧЕНИЕ?',
     description: `
             Чтобы попасть в&nbsp;клинику нужно получить
-            достижение на&nbsp;Twitch канале <b>Ishie_j</b> (направление&nbsp;на&nbsp;терапию)
-            Список доступных на&nbsp;данный момент терапий:
+            достижение на&nbsp;Twitch канале Ishie_j (<b>жетон&nbsp;терапии</b>)
+            Список доступных на&nbsp;данный момент достижений:
         `,
 }
 
