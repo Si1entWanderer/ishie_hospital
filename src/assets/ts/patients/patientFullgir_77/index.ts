@@ -6,7 +6,7 @@ import examination1 from './examinations/examination1'
 
 export const patientFullgir_77: IPatient = {
     id: '77632',
-    name: 'fullgir_77',
+    name: 'fullgir_j',
     image: fullgir_77Avatar,
     sex: ESex.male,
     birthDate: '6.12.2024',
