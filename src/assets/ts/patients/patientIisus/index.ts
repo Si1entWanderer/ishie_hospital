@@ -8,7 +8,7 @@ import examination2 from './examinations/examination2'
 
 export const patientIisus: IPatient = {
     id: '43434',
-    name: 'iisus_0001_j',
+    name: 'ecyc_j',
     image: iisusAvatar,
     sex: ESex.male,
     birthDate: '9.01.2025',
