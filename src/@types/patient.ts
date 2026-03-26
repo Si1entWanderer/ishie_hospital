@@ -16,7 +16,7 @@ export interface IPatient {
     registrationDate?: number
 }
 
-export type TTherapyMark = {
+export interface ITherapyMark {
     id: ETherapyMarksIds
     image: string
     name: string

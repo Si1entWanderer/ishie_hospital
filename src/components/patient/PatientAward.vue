@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TTherapyMark } from '@/@types/patient'
+import type { ITherapyMark } from '@/@types/patient'
 
 import { ref, useCssModule, computed } from 'vue'
 
@@ -14,7 +14,7 @@ enum EImageType {
 }
 
 interface IProps {
-    mark: TTherapyMark
+    mark: ITherapyMark
 }
 
 defineProps<IProps>()

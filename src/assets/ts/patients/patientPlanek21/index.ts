@@ -5,7 +5,7 @@ import examination1 from './examinations/examination1'
 
 export const patientPlanek21: IPatient = {
     id: '13518',
-    name: 'planek21',
+    name: 'planek_j',
     image: null,
     sex: ESex.male,
     birthDate: '15.08.2025',

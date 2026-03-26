@@ -1,7 +1,7 @@
 import type { ITextBlock } from '@/@types/blocks'
 import type { TCheckboxGroupData } from '@/@types/ui'
 import { EIcons, ETherapyMarksIds, ETherapyMarksGrades } from '@/assets/ts/enums'
-import type { TTherapyMark } from '@/@types/patient'
+import type { ITherapyMark } from '@/@types/patient'
 
 import collectorImage from '@/assets/images/rewards/collector.png'
 import pukaton2025Image from '@/assets/images/rewards/pukaton.png'
@@ -291,7 +291,7 @@ export const FILEDS_DEFAULT_VALUES = Object.fromEntries(FORM_FIELDS.map((field) 
 export const LOCALSTORAGE_FORM_KEY = 'ishie_hospital_checkup_data'
 export const LOCALSTORAGE_NAME_KEY = 'ishie_hospital_checkup_name'
 
-export const THERAPY_MARKS: TTherapyMark[] = [
+export const THERAPY_MARKS: ITherapyMark[] = [
     {
         id: ETherapyMarksIds.collector,
         image: collectorImage,
