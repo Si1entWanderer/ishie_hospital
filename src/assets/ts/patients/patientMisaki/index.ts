@@ -2,8 +2,8 @@ import type { IPatient } from '@/@types/patient'
 import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
 
 import misakiAvatar from '@/assets/images/avatars/misakiAvatar.gif'
-import examination1 from './examinations/examination1'
 import { STAFF_NAMES } from '@/assets/ts/constants'
+import examination1 from './examinations/examination1'
 
 export const patientMisaki: IPatient = {
     id: '73854',
@@ -17,6 +17,7 @@ export const patientMisaki: IPatient = {
         ETherapyMarksIds.pukaton2025,
         ETherapyMarksIds.streak100,
         ETherapyMarksIds.clip300,
+        ETherapyMarksIds.donation3k,
     ],
     staffName: STAFF_NAMES.misaki,
     registrationDate: 1764115200000,

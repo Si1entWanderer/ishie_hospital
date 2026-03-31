@@ -1,18 +1,24 @@
 import type { ITextBlock } from '@/@types/blocks'
+<<<<<<< Updated upstream
 import type { TCheckboxGroupData } from '@/@types/ui'
 import { EIcons, ETherapyMarksIds, ETherapyMarksGrades } from '@/assets/ts/enums'
 import type { ITherapyMark } from '@/@types/patient'
+=======
+import type { TTherapyMark } from '@/@types/patient'
+import type { TCheckboxGroupData } from '@/@types/ui'
+import { EIcons, ETherapyMarksGrades, ETherapyMarksIds } from '@/assets/ts/enums'
+>>>>>>> Stashed changes
 
-import collectorImage from '@/assets/images/rewards/collector.png'
-import pukaton2025Image from '@/assets/images/rewards/pukaton.png'
-import streak100Image from '@/assets/images/rewards/streak.png'
-import raid100Image from '@/assets/images/rewards/raid.png'
-import rouletteImage from '@/assets/images/rewards/gamble.png'
 import views300Image from '@/assets/images/rewards/clip300.png'
+import collectorImage from '@/assets/images/rewards/collector.png'
 import donateOptionImage from '@/assets/images/rewards/donation.png'
+import rouletteImage from '@/assets/images/rewards/gamble.png'
+import pukaton2025Image from '@/assets/images/rewards/pukaton.png'
+import raid100Image from '@/assets/images/rewards/raid.png'
+import streak100Image from '@/assets/images/rewards/streak.png'
 
-import frameLegendaryImage from '@/assets/images/frames/legendary.png'
 import frameEpicImage from '@/assets/images/frames/epic.png'
+import frameLegendaryImage from '@/assets/images/frames/legendary.png'
 import frameRareImage from '@/assets/images/frames/rare.png'
 import frameUncommonImage from '@/assets/images/frames/uncommon.png'
 
@@ -138,6 +144,26 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
                 pk: '7',
                 label: 'ГМГ- Гига Мега Гей',
             },
+            {
+                pk: '8',
+                label: 'ОСКП - Ощущение себя котенком - поваренком',
+            },
+            {
+                pk: '9',
+                label: 'СМП - Синдром Маленькой Письки',
+            },
+            {
+                pk: '10',
+                label: 'ЧТК - Что Такое Какать',
+            },
+            {
+                pk: '11',
+                label: 'СЭКС - Слишком Энергичные Колебания Сердца',
+            },
+            {
+                pk: '12',
+                label: 'ОГН - Отрицание Гей Натуры',
+            },
         ],
     },
     {
@@ -184,6 +210,42 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
                 pk: '10',
                 label: 'Непрекращающиеся "ПАПА ПЕВА ГЕМАБОДИ ПАПА ПЕВА ДЖЕСАНАВА" в голове',
             },
+            {
+                pk: '11',
+                label: 'Синдром навязчивых грез о членах',
+            },
+            {
+                pk: '12',
+                label: 'Криглевидные высыпания на коже',
+            },
+            {
+                pk: '13',
+                label: 'Покраснения в области щек при посещении стрима',
+            },
+            {
+                pk: '14',
+                label: 'Бредовые идеи о существовании секса',
+            },
+            {
+                pk: '15',
+                label: 'Непреодолимая тяга к пиломатериалам',
+            },
+            {
+                pk: '16',
+                label: 'Потерянное чувство обаяния',
+            },
+            {
+                pk: '17',
+                label: 'Фантомные воспоминания о вымышленной 3Д модели монашки',
+            },
+            {
+                pk: '18',
+                label: 'Приступы спонтанного вращения членом',
+            },
+            {
+                pk: '19',
+                label: 'Неконтролируемые подсосы к хайповозу',
+            },
         ],
     },
     {
@@ -221,6 +283,38 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
             {
                 pk: '8',
                 label: 'Вернуть деньги Мисаки вместо врача',
+            },
+            {
+                pk: '9',
+                label: 'Пукнуть под присмотром врача',
+            },
+            {
+                pk: '10',
+                label: 'Получить по попи',
+            },
+            {
+                pk: '11',
+                label: 'Прогрев связок песней Macan "Подо мной дилдо метров 8"',
+            },
+            {
+                pk: '12',
+                label: 'Поставить свое сердечко под пост в тг',
+            },
+            {
+                pk: '13',
+                label: 'Пони-терапия - марафон по MLP',
+            },
+            {
+                pk: '14',
+                label: 'Анмод',
+            },
+            {
+                pk: '15',
+                label: 'Прослушивание ASMR от Иши 1 раз в день перед сном в течение недели',
+            },
+            {
+                pk: '6',
+                label: 'Прием гематогенки с ежиком, выпрошенной у мамы(не обязательно своей)',
             },
         ],
     },
