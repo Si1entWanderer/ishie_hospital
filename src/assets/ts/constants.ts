@@ -1,13 +1,7 @@
 import type { ITextBlock } from '@/@types/blocks'
-<<<<<<< Updated upstream
-import type { TCheckboxGroupData } from '@/@types/ui'
-import { EIcons, ETherapyMarksIds, ETherapyMarksGrades } from '@/assets/ts/enums'
 import type { ITherapyMark } from '@/@types/patient'
-=======
-import type { TTherapyMark } from '@/@types/patient'
 import type { TCheckboxGroupData } from '@/@types/ui'
 import { EIcons, ETherapyMarksGrades, ETherapyMarksIds } from '@/assets/ts/enums'
->>>>>>> Stashed changes
 
 import views300Image from '@/assets/images/rewards/clip300.png'
 import collectorImage from '@/assets/images/rewards/collector.png'
@@ -313,7 +307,7 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
                 label: 'Прослушивание ASMR от Иши 1 раз в день перед сном в течение недели',
             },
             {
-                pk: '6',
+                pk: '16',
                 label: 'Прием гематогенки с ежиком, выпрошенной у мамы(не обязательно своей)',
             },
         ],
