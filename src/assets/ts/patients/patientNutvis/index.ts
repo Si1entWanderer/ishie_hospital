@@ -6,7 +6,7 @@ import examination1 from './examinations/examination1'
 import examination2 from './examinations/examination2'
 import { STAFF_NAMES } from '@/assets/ts/constants'
 
-export const patientNutvis: IPatient = {
+const patientNutvis: IPatient = {
     id: '93608',
     name: 'nutvismunt_j',
     image: nutvisAvatar,
@@ -18,3 +18,5 @@ export const patientNutvis: IPatient = {
     staffName: STAFF_NAMES.nutvis,
     registrationDate: 1764115200000,
 }
+
+export default patientNutvis

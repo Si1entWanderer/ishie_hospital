@@ -1,6 +1,9 @@
-@import './variables';
-@import './mixins';
-@import './transitions';
+@forward 'variables';
+@forward 'mixins';
+
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'transitions';
 
 * {
     box-sizing: border-box;

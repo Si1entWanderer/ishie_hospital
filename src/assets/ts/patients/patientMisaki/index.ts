@@ -5,7 +5,7 @@ import misakiAvatar from '@/assets/images/avatars/misakiAvatar.gif'
 import { STAFF_NAMES } from '@/assets/ts/constants'
 import examination1 from './examinations/examination1'
 
-export const patientMisaki: IPatient = {
+const patientMisaki: IPatient = {
     id: '73854',
     name: 'misaki__j',
     image: misakiAvatar,
@@ -22,3 +22,5 @@ export const patientMisaki: IPatient = {
     staffName: STAFF_NAMES.misaki,
     registrationDate: 1764115200000,
 }
+
+export default patientMisaki

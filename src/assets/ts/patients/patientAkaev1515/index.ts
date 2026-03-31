@@ -3,7 +3,7 @@ import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
 
 import examination1 from './examinations/examination1'
 
-export const patientAkaev1515: IPatient = {
+const patientAkaev1515: IPatient = {
     id: '15208',
     name: 'akaev1515',
     image: null,
@@ -14,3 +14,5 @@ export const patientAkaev1515: IPatient = {
     therapyMarks: [ETherapyMarksIds.roulette],
     registrationDate: 1772755200000,
 }
+
+export default patientAkaev1515;

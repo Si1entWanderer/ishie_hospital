@@ -4,7 +4,7 @@ import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
 import Dze_niAvatar from '@/assets/images/avatars/Dzen_NiAvatar.jpg'
 import examination1 from './examinations/examination1'
 
-export const patientDze_ni: IPatient = {
+const patientDze_ni: IPatient = {
     id: '15794',
     name: 'Dze_Ni',
     image: Dze_niAvatar,
@@ -15,3 +15,5 @@ export const patientDze_ni: IPatient = {
     therapyMarks: [ETherapyMarksIds.raid100],
     registrationDate: 1767225600000,
 }
+
+export default patientDze_ni
