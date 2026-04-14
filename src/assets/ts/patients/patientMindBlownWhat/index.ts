@@ -5,6 +5,7 @@ import MindBlownWhatAvatar from '@/assets/images/avatars/MindBlownWhatAvatar.jpg
 
 import examination1 from './examinations/examination1';
 import examination2 from './examinations/examination2';
+import examination3 from './examinations/examination3';
 
 const patient: IPatient = {
     id: '38592',
@@ -13,7 +14,7 @@ const patient: IPatient = {
     sex: ESex.male,
     birthDate: '20.03.2026',
     residentalAddress: 'Twitch канал Ishie_j',
-    examinations: [examination1, examination2],
+    examinations: [examination1, examination2, examination3],
     therapyMarks: [ETherapyMarksIds.roulette],
     registrationDate: 1773964800000,
 }

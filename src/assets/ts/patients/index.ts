@@ -1,5 +1,6 @@
 import patientAkaev1515 from '@/assets/ts/patients/patientAkaev1515'
 import patientAlyooha from '@/assets/ts/patients/patientAlyooha'
+import patientBOrealweiSS from '@/assets/ts/patients/patientBOrealweiSS'
 import patientDarkvels from '@/assets/ts/patients/patientDarkvels'
 import patientDreamdel from '@/assets/ts/patients/patientDreamdel'
 import patientDze_ni from '@/assets/ts/patients/patientDze_ni'
@@ -45,4 +46,5 @@ export default [
     patientMrblackwolf1k_j,
     patientAkaev1515,
     patientMindBlownWhat,
+    patientBOrealweiSS,
 ]
