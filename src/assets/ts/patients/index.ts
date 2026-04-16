@@ -4,6 +4,7 @@ import patientBOrealweiSS from '@/assets/ts/patients/patientBOrealweiSS'
 import patientDarkvels from '@/assets/ts/patients/patientDarkvels'
 import patientDreamdel from '@/assets/ts/patients/patientDreamdel'
 import patientDze_ni from '@/assets/ts/patients/patientDze_ni'
+import patientFalaqq_j from '@/assets/ts/patients/patientFalaqq_j'
 import patientFullgir_77 from '@/assets/ts/patients/patientFullgir_77'
 import patientIisus from '@/assets/ts/patients/patientIisus'
 import patientIwyry from '@/assets/ts/patients/patientIwyry'
@@ -21,7 +22,6 @@ import patientPlanek21 from '@/assets/ts/patients/patientPlanek21'
 import patientSamr1na from '@/assets/ts/patients/patientSamr1na'
 import patientYounochkq from '@/assets/ts/patients/patientYounochkq'
 import patientYumekomoore from '@/assets/ts/patients/patientYumekomoore'
-
 
 export default [
     patientAlyooha,
@@ -47,4 +47,5 @@ export default [
     patientAkaev1515,
     patientMindBlownWhat,
     patientBOrealweiSS,
+    patientFalaqq_j
 ]
