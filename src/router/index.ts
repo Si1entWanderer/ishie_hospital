@@ -7,6 +7,10 @@ import PatientsPage from '@/views/PatientsPage.vue'
 import TokensPage from '@/views/TokensPage.vue'
 import RulesPage from '@/views/RulesPage.vue'
 import ErrorPage from '@/views/ErrorPage.vue'
+import AdminPatientListPage from '@/views/admin/AdminPatientListPage.vue'
+
+import AdminLayout from '@/layouts/AdminLayout.vue'
+import AdminPatientAddPage from '@/views/admin/AdminPatientAddPage.vue'
 
 const router = createRouter({
     history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -34,6 +38,20 @@ const router = createRouter({
         {
             path: '/rules',
             component: RulesPage,
+        },
+        {
+            path: '/admin/patients',
+            component: AdminPatientListPage,
+            meta: {
+                layout: AdminLayout,
+            },
+        },
+        {
+            path: '/admin/add-patient',
+            component: AdminPatientAddPage,
+            meta: {
+                layout: AdminLayout,
+            },
         },
         {
             path: '/:pathMatch(.*)*',

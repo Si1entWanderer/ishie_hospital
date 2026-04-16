@@ -20,4 +20,4 @@ const patientAlyooha: IPatient = {
     registrationDate: 1763856000000,
 }
 
-export default patientAlyooha;
+export default patientAlyooha

@@ -9,13 +9,19 @@ const emit = defineEmits<{
 
 <template>
     <div :class="$style.VNavigation">
-        <button :class="[$style.button, $style._prev]" @click="emit('clickPrev')">
+        <button
+            :class="[$style.button, $style._prev]"
+            @click="emit('clickPrev')"
+        >
             <svg :class="$style.icon">
                 <use :xlink:href="EIcons.arrowBackAlt" />
             </svg>
         </button>
 
-        <button :class="[$style.button, $style._next]" @click="emit('clickNext')">
+        <button
+            :class="[$style.button, $style._next]"
+            @click="emit('clickNext')"
+        >
             <svg :class="$style.icon">
                 <use :xlink:href="EIcons.arrowForwardAlt" />
             </svg>

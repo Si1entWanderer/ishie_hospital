@@ -8,7 +8,11 @@ import VButton from '@/components/ui/VButton.vue'
 <template>
     <div :class="$style.TokensPage">
         <div :class="[$style.container, 'container']">
-            <VButton :class="$style.button" tag="router-link" to="/">
+            <VButton
+                :class="$style.button"
+                tag="router-link"
+                to="/"
+            >
                 {{ MAINPAGE_BUTTON_TEXT }}
             </VButton>
 

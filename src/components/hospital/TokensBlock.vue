@@ -20,16 +20,32 @@ const textContent = {
 
 <template>
     <BlockWrapper :class="$style.FaqBlock">
-        <TextBlock :data="textContent" :title-tag="ETitleTag.h2" />
+        <TextBlock
+            :data="textContent"
+            :title-tag="ETitleTag.h2"
+        />
 
         <ul :class="$style.therapies">
-            <li v-for="therapy in activeTherapies" :key="therapy.id" :class="$style.therapy">
-                <PatientAward :mark="therapy" :class="$style.image" />
+            <li
+                v-for="therapy in activeTherapies"
+                :key="therapy.id"
+                :class="$style.therapy"
+            >
+                <PatientAward
+                    :mark="therapy"
+                    :class="$style.image"
+                />
 
                 <div :class="$style.content">
-                    <h4 :class="$style.therapyName" v-html="therapy.name" />
+                    <h4
+                        :class="$style.therapyName"
+                        v-html="therapy.name"
+                    />
 
-                    <p :class="$style.therapyDescription" v-html="therapy.description" />
+                    <p
+                        :class="$style.therapyDescription"
+                        v-html="therapy.description"
+                    />
                 </div>
             </li>
         </ul>

@@ -21,7 +21,6 @@ import patientSamr1na from '@/assets/ts/patients/patientSamr1na'
 import patientYounochkq from '@/assets/ts/patients/patientYounochkq'
 import patientYumekomoore from '@/assets/ts/patients/patientYumekomoore'
 
-
 export default [
     patientAlyooha,
     patientIisus,

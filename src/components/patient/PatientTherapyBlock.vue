@@ -27,7 +27,11 @@ const activeMarks = computed(() =>
 
         <div :class="$style.body">
             <ul :class="$style.list">
-                <li v-for="mark in activeMarks" :class="$style.item" :key="mark.id">
+                <li
+                    v-for="mark in activeMarks"
+                    :class="$style.item"
+                    :key="mark.id"
+                >
                     <PatientAward :mark="mark" />
                 </li>
             </ul>

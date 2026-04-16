@@ -21,3 +21,15 @@ export enum EButtonStyles {
 export type EButtonTag = 'a' | 'button' | 'router-link'
 
 export type TSize = 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge'
+
+export type TColor =
+    | 'primary'
+    | 'secondary'
+    | 'danger'
+    | 'success'
+    | 'warning'
+    | 'info'
+    | 'light'
+    | 'dark'
+
+export type TMouseHandler = (event: MouseEvent) => void

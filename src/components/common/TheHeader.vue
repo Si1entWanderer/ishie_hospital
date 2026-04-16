@@ -17,7 +17,10 @@ const CLINIC_DESCRIPTION = 'Лечебное профилактическое у
                 </svg>
 
                 <div :class="$style.clinic">
-                    <h1 :class="$style.clinicName" :title="CLINIC_TITLE">
+                    <h1
+                        :class="$style.clinicName"
+                        :title="CLINIC_TITLE"
+                    >
                         {{ CLINIC_NAME }}
                     </h1>
 

@@ -17,9 +17,15 @@ withDefaults(
 <template>
     <div :class="$style.StaffStatus">
         <div :class="$style.content">
-            <p :class="$style.label" v-html="LABEL" />
+            <p
+                :class="$style.label"
+                v-html="LABEL"
+            />
 
-            <p :class="$style.name" v-html="staffName" />
+            <p
+                :class="$style.name"
+                v-html="staffName"
+            />
         </div>
 
         <svg :class="$style.icon">

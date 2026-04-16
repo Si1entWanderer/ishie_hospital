@@ -72,28 +72,44 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <BlockWrapper :class="$style.BentoBestPatients" :title="BLOCK_TITLE">
+    <BlockWrapper
+        :class="$style.BentoBestPatients"
+        :title="BLOCK_TITLE"
+    >
         <div :class="$style.content">
-            <button :class="[$style.navigation, $style._prev]" @click="onPrev">
+            <button
+                :class="[$style.navigation, $style._prev]"
+                @click="onPrev"
+            >
                 <svg :class="$style.navigationIcon">
                     <use :xlink:href="EIcons.arrowBackAlt" />
                 </svg>
             </button>
 
             <!-- eslint disable -->
-            <Swiper :class="$style.slider" v-bind="SWIPER_OPTIONS" @swiper="onSwiperInit">
+            <Swiper
+                :class="$style.slider"
+                v-bind="SWIPER_OPTIONS"
+                @swiper="onSwiperInit"
+            >
                 <SwiperSlide
                     v-for="patient in bestPatients"
                     :class="$style.slide"
                     :key="patient.id"
                 >
-                    <RouterLink :class="$style.link" :to="`/patients/${patient.id}`">
+                    <RouterLink
+                        :class="$style.link"
+                        :to="`/patients/${patient.id}`"
+                    >
                         <PatientPreviewCard :data="patient" />
                     </RouterLink>
                 </SwiperSlide>
             </Swiper>
 
-            <button :class="[$style.navigation, $style._next]" @click="onNext">
+            <button
+                :class="[$style.navigation, $style._next]"
+                @click="onNext"
+            >
                 <svg :class="$style.navigationIcon">
                     <use :xlink:href="EIcons.arrowForwardAlt" />
                 </svg>

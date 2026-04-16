@@ -25,21 +25,44 @@ const dateAddedValue = computed(() => format(props.data?.registrationDate || 0, 
 </script>
 
 <template>
-    <RouterLink :class="[$style.PatientPreviewLink, classList]" :to="`/patients/${data.id}`">
-        <PatientAvatar :class="$style.avatar" :image="data.image" hide-icon />
+    <RouterLink
+        :class="[$style.PatientPreviewLink, classList]"
+        :to="`/patients/${data.id}`"
+    >
+        <PatientAvatar
+            :class="$style.avatar"
+            :image="data.image"
+            hide-icon
+        />
 
         <Transition name="fade">
-            <div v-if="size === 'medium'" :class="$style.content">
+            <div
+                v-if="size === 'medium'"
+                :class="$style.content"
+            >
                 <span :class="$style.name"> {{ data.name }}&nbsp;→ </span>
             </div>
 
-            <div v-else-if="size === 'large'" :class="$style.content">
-                <div :class="$style.name" v-html="data.name" :title="data.name" />
+            <div
+                v-else-if="size === 'large'"
+                :class="$style.content"
+            >
+                <div
+                    :class="$style.name"
+                    v-html="data.name"
+                    :title="data.name"
+                />
 
                 <dl :class="$style.row">
-                    <dt :class="$style.label" v-html="DATE_ADDED_LABEL" />
+                    <dt
+                        :class="$style.label"
+                        v-html="DATE_ADDED_LABEL"
+                    />
 
-                    <dd :class="$style.text" v-html="dateAddedValue" />
+                    <dd
+                        :class="$style.text"
+                        v-html="dateAddedValue"
+                    />
                 </dl>
             </div>
         </Transition>

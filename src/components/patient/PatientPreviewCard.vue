@@ -13,16 +13,29 @@ defineProps<IProps>()
 
 <template>
     <div :class="$style.PatientPreviewCard">
-        <PatientAvatar :class="$style.avatar" :image="data?.image" hide-icon />
+        <PatientAvatar
+            :class="$style.avatar"
+            :image="data?.image"
+            hide-icon
+        />
 
         <dl :class="$style.row">
-            <dt :class="$style.label" v-html="NAME_LABEL" />
+            <dt
+                :class="$style.label"
+                v-html="NAME_LABEL"
+            />
 
-            <dd :class="$style.text" v-html="data?.name" />
+            <dd
+                :class="$style.text"
+                v-html="data?.name"
+            />
         </dl>
 
         <dl :class="$style.row">
-            <dt :class="$style.label" v-html="TOKENS_COUNT_LABEL" />
+            <dt
+                :class="$style.label"
+                v-html="TOKENS_COUNT_LABEL"
+            />
 
             <dd :class="$style.text">
                 {{ data?.therapyMarks?.length }}

@@ -82,11 +82,20 @@ function getNumberClassList(index: number) {
                 {{ activeTitle }}
             </h2>
 
-            <PatientAvatar :class="$style.avatar" :image="patient?.image" />
+            <PatientAvatar
+                :class="$style.avatar"
+                :image="patient?.image"
+            />
 
-            <StaffStatus v-if="patient?.staffName" :staff-name="patient.staffName" />
+            <StaffStatus
+                v-if="patient?.staffName"
+                :staff-name="patient.staffName"
+            />
 
-            <div v-if="patient?.staffExperience" :class="$style.dataBlock">
+            <div
+                v-if="patient?.staffExperience"
+                :class="$style.dataBlock"
+            >
                 <h3 :class="$style.dataTitle">
                     {{ LABELS.STAFF_EXPERIENCE }}
                 </h3>
@@ -155,8 +164,14 @@ function getNumberClassList(index: number) {
                 </button>
             </div>
 
-            <VButton :class="$style.button" @click="isLastExamination = !isLastExamination">
-                <Transition name="fade" mode="out-in">
+            <VButton
+                :class="$style.button"
+                @click="isLastExamination = !isLastExamination"
+            >
+                <Transition
+                    name="fade"
+                    mode="out-in"
+                >
                     <span :key="isLastExamination.toString()">
                         {{
                             isLastExamination ? LABELS.OTHER_EXAMINATIONS : LABELS.LAST_EXAMINATION
@@ -187,7 +202,11 @@ function getNumberClassList(index: number) {
             />
         </div>
 
-        <img :class="$style.seal" :src="SEAL_IMAGE" :alt="SEAL_IMAGE_ALT" />
+        <img
+            :class="$style.seal"
+            :src="SEAL_IMAGE"
+            :alt="SEAL_IMAGE_ALT"
+        />
     </BlockWrapper>
 </template>
 

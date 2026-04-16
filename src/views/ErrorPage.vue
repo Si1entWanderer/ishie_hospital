@@ -17,7 +17,11 @@ const DESCRIPTION = 'А такой страницы не существует!'
         <div :class="[$style.container, 'container']">
             <BlockWrapper :class="$style.wrapper">
                 <div :class="$style.imageContainer">
-                    <img :class="$style.image" :src="shizImage" :alt="SHIZ_IMAGE_ALT" />
+                    <img
+                        :class="$style.image"
+                        :src="shizImage"
+                        :alt="SHIZ_IMAGE_ALT"
+                    />
                 </div>
 
                 <h2 :class="$style.hidden">
@@ -36,7 +40,11 @@ const DESCRIPTION = 'А такой страницы не существует!'
                     {{ DESCRIPTION }}
                 </p>
 
-                <VButton tag="router-link" to="/" :style="EButtonStyles.filled">
+                <VButton
+                    tag="router-link"
+                    to="/"
+                    :style="EButtonStyles.filled"
+                >
                     {{ MAINPAGE_BUTTON_TEXT }}
                 </VButton>
             </BlockWrapper>

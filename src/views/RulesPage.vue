@@ -10,12 +10,20 @@ import VButton from '@/components/ui/VButton.vue'
 <template>
     <div :class="$style.RulesPage">
         <div :class="[$style.container, 'container']">
-            <VButton :class="$style.button" tag="router-link" to="/">
+            <VButton
+                :class="$style.button"
+                tag="router-link"
+                to="/"
+            >
                 {{ MAINPAGE_BUTTON_TEXT }}
             </VButton>
 
             <BlockWrapper :class="$style.content">
-                <TextBlock v-for="block in RULES_DATA" :data="block" :key="block.description" />
+                <TextBlock
+                    v-for="block in RULES_DATA"
+                    :data="block"
+                    :key="block.description"
+                />
             </BlockWrapper>
         </div>
     </div>

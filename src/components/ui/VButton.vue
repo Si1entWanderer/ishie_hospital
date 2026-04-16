@@ -19,7 +19,10 @@ const classList = computed(() => [$style[`_style-${props.style}`]])
 </script>
 
 <template>
-    <component :is="tag" :class="[$style.VButton, classList]">
+    <component
+        :is="tag"
+        :class="[$style.VButton, classList]"
+    >
         <slot />
     </component>
 </template>

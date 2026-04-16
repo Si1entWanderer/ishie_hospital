@@ -10,8 +10,16 @@ defineProps<IProps>()
 
 <template>
     <ul :class="$style.BentoLinks">
-        <li v-for="link in links" :class="$style.item" :key="link.id" target="_blank">
-            <a :class="$style.link" :href="link.href">
+        <li
+            v-for="link in links"
+            :class="$style.item"
+            :key="link.id"
+            target="_blank"
+        >
+            <a
+                :class="$style.link"
+                :href="link.href"
+            >
                 <svg :class="$style.icon">
                     <use :xlink:href="link.icon" />
                 </svg>

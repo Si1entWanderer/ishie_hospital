@@ -18,4 +18,4 @@ const patientOmdfr: IPatient = {
     registrationDate: 1764288000000,
 }
 
-export default patientOmdfr;
+export default patientOmdfr

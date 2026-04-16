@@ -7,7 +7,11 @@ defineProps<IProps>()
 
 <template>
     <div :class="$style.BlockWrapper">
-        <p v-if="title" :class="$style.title" v-html="title" />
+        <p
+            v-if="title"
+            :class="$style.title"
+            v-html="title"
+        />
 
         <slot />
     </div>

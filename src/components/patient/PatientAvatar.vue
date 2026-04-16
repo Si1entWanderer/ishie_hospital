@@ -19,7 +19,10 @@ const isLoading = ref(true)
 
 <template>
     <div :class="$style.PatientAvatar">
-        <Transition name="fade" mode="out-in">
+        <Transition
+            name="fade"
+            mode="out-in"
+        >
             <img
                 v-if="image"
                 :class="$style.image"
@@ -37,10 +40,16 @@ const isLoading = ref(true)
         </Transition>
 
         <Transition name="fade">
-            <div v-if="isLoading" :class="$style.skeleton" />
+            <div
+                v-if="isLoading"
+                :class="$style.skeleton"
+            />
         </Transition>
 
-        <svg v-if="!hideIcon" :class="$style.patch">
+        <svg
+            v-if="!hideIcon"
+            :class="$style.patch"
+        >
             <use :xlink:href="EIcons.heart" />
         </svg>
     </div>

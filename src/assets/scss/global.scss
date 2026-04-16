@@ -1,6 +1,8 @@
+@forward 'variables-css';
 @forward 'variables';
 @forward 'mixins';
 
+@use 'variables-css' as *;
 @use 'variables' as *;
 @use 'mixins' as *;
 @use 'transitions';
@@ -20,4 +22,9 @@
     @include respond-to(mobile) {
         padding: 0 20px;
     }
+}
+
+.admin-container {
+    width: 100%;
+    padding: 0 var(--padding-admin-container-horizontal);
 }

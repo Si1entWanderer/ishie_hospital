@@ -12,7 +12,11 @@ defineProps<IProps>()
 
 <template>
     <BlockWrapper :class="$style.BentoTextBlock">
-        <TextBlock v-for="block in blocks" :key="block.id" :data="block" />
+        <TextBlock
+            v-for="block in blocks"
+            :key="block.id"
+            :data="block"
+        />
     </BlockWrapper>
 </template>
 

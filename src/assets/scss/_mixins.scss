@@ -73,3 +73,43 @@ $screen-sizes: (
         font-weight: normal;
     }
 }
+
+@mixin text-admin($text-type) {
+    @if $text-type == 'h1-sb' {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 600; // semibold
+    } @else if $text-type == 'h2-sb' {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600; // semibold
+    } @else if $text-type == 'h3-sb' {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600; // semibold
+    } @else if $text-type == 'body-m' {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500; // medium
+    } @else if $text-type == 'body' {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400; // regular
+    } @else if $text-type == 'caption-sb' {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 600; // semibold
+    } @else if $text-type == 'caption-m' {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 500; // medium
+    } @else if $text-type == 'caption' {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400; // regular
+    } @else if $text-type == 'small' {
+        font-size: 8px;
+        line-height: 12px;
+        font-weight: 400; // regular
+    }
+}

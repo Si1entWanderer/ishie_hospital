@@ -13,6 +13,8 @@ export enum EIcons {
     editDocument = '#edit-document',
     cup = '#cup',
     personHeart = '#person-heart',
+    solarArrowRight = '#solar-arrow-right',
+    check = '#check',
 }
 
 export enum ESex {

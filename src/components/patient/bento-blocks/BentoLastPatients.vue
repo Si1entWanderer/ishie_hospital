@@ -10,9 +10,16 @@ const lastPatients = patients.slice(PATIENTS_COUNT * -1).reverse()
 </script>
 
 <template>
-    <BlockWrapper :class="$style.BentoLastPatients" :title="BLOCK_TITLE">
+    <BlockWrapper
+        :class="$style.BentoLastPatients"
+        :title="BLOCK_TITLE"
+    >
         <div :class="$style.content">
-            <PatientPreviewLink v-for="patient in lastPatients" :key="patient.id" :data="patient" />
+            <PatientPreviewLink
+                v-for="patient in lastPatients"
+                :key="patient.id"
+                :data="patient"
+            />
         </div>
     </BlockWrapper>
 </template>

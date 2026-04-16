@@ -42,7 +42,10 @@ function onImageLoad(image: EImageType) {
 <template>
     <div :class="[$style.PatientAward, classList]">
         <transition name="fade">
-            <div v-if="!isBothImagesLoaded" :class="$style.preloader" />
+            <div
+                v-if="!isBothImagesLoaded"
+                :class="$style.preloader"
+            />
         </transition>
 
         <img

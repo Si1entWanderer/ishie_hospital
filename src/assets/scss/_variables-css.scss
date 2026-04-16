@@ -1,0 +1,111 @@
+:root {
+    /**
+    * ===== Admin Variables =====
+    */
+
+    // Colors
+    --color-admin-dark-900: #0f0f10;
+    --color-admin-dark-800: #121214;
+    --color-admin-dark-700: #141417;
+    --color-admin-dark-600: #17171a;
+    --color-admin-dark-500: #1f1f24;
+    --color-admin-dark-400: #262629;
+    --color-admin-dark-300: #2e2e30;
+    --color-admin-dark-200: #333338;
+    --color-admin-dark-100: #38383d;
+    --color-admin-dark-0: #47474d;
+
+    --color-admin-light-900: #73737a;
+    --color-admin-light-800: #8c8c94;
+    --color-admin-light-700: #a6a6ad;
+    --color-admin-light-600: #b5b5ba;
+    --color-admin-light-500: #bfbfc7;
+    --color-admin-light-400: #c7c7cc;
+    --color-admin-light-300: #d1d1d9;
+    --color-admin-light-200: #e5e5eb;
+    --color-admin-light-150: #ebebf0;
+    --color-admin-light-100: #f5f5f7;
+    --color-admin-light-50: #fafafc;
+    --color-admin-light-0: #ffffff;
+
+    --color-admin-success-200: #14241c;
+    --color-admin-success-100: #337352;
+    --color-admin-success-0: #a7f3d0;
+
+    --color-admin-error-300: #241414;
+    --color-admin-error-200: #733838;
+    --color-admin-error-100: #d95959;
+    --color-admin-error-0: #fca5a5;
+
+    --color-admin-warning-200: #1f1a0f;
+    --color-admin-warning-100: #6b591f;
+    --color-admin-warning-0: #fde68a;
+
+    --color-admin-accent-100: #1775d1;
+    --color-admin-accent-0: #73a6f2;
+
+    // Colors - Semantic
+    --color-admin-login-background: var(--color-admin-dark-900);
+    --color-admin-background: var(--color-admin-dark-800);
+    --color-admin-sidebar: var(--color-admin-dark-900);
+    --color-admin-stroke: var(--color-admin-dark-400);
+    --color-admin-block: var(--color-admin-dark-600);
+
+    --color-admin-block-background: var(--color-admin-dark-600);
+    --color-admin-block-stroke: var(--color-admin-dark-400);
+    --color-admin-block-count-background: var(--color-admin-dark-400);
+    --color-admin-block-count-text: var(--color-admin-light-500);
+
+    --color-admin-icon-default: var(--color-admin-light-500);
+
+    --color-admin-input-wrapper-background: var(--color-admin-dark-800);
+
+    --color-admin-navigation-hover: var(--color-admin-dark-700);
+    --color-admin-navigation-hover-stroke: var(--color-admin-dark-300);
+    --color-admin-navigation-active: var(--color-admin-dark-500);
+    --color-admin-navigation-active-stroke: var(--color-admin-dark-100);
+
+    --color-admin-text-primary: var(--color-admin-light-150);
+    --color-admin-text-secondary: var(--color-admin-light-200);
+    --color-admin-text-tertiary: var(--color-admin-light-500);
+
+    --color-admin-input-background: var(--color-admin-dark-800);
+    --color-admin-input-placeholder: var(--color-admin-light-800);
+    --color-admin-input-label: var(--color-admin-light-700);
+    --color-admin-input-hover: var(--color-admin-dark-600);
+    --color-admin-input-stroke: var(--color-admin-dark-300);
+    --color-admin-input-value: var(--color-admin-light-300);
+    --color-admin-input-check-icon: var(--color-admin-light-0);
+    --color-admin-input-check-active: var(--color-admin-accent-100);
+    --color-admin-input-check-active-stroke: var(--color-admin-accent-0);
+
+    --color-admin-button-primary: var(--color-admin-accent-100);
+    --color-admin-button-primary-hover: var(--color-admin-accent-0);
+    --color-admin-button-primary-text: var(--color-admin-light-0);
+
+    --color-admin-button-secondary: transparent;
+    --color-admin-button-secondary-hover: var(--color-admin-dark-100);
+    --color-admin-button-secondary-stroke: var(--color-admin-dark-200);
+    --color-admin-button-secondary-text: var(--color-admin-light-400);
+
+    --color-admin-action: var(--color-admin-accent-0);
+    --color-admin-action-dangerous: var(--color-admin-error-100);
+
+    --color-alert-success-background: var(--color-admin-success-200);
+    --color-alert-success-stroke: var(--color-admin-success-100);
+    --color-alert-success-text: var(--color-admin-success-0);
+
+    --color-alert-error-background: var(--color-admin-error-300);
+    --color-alert-error-stroke: var(--color-admin-error-100);
+    --color-alert-error-text: var(--color-admin-error-0);
+
+    --color-alert-warning-background: var(--color-admin-warning-200);
+    --color-alert-warning-stroke: var(--color-admin-warning-100);
+    --color-alert-warning-text: var(--color-admin-warning-0);
+
+    // Sizes
+    --size-admin-sidebar-width: 256px;
+
+    // Spacing
+    --padding-admin-container-horizontal: 32px;
+}

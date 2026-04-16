@@ -28,7 +28,11 @@ function onChecked(event: Event) {
         </p>
 
         <div :class="$style.list">
-            <label v-for="variant in data.variants" :class="$style.checkbox" :key="variant.pk">
+            <label
+                v-for="variant in data.variants"
+                :class="$style.checkbox"
+                :key="variant.pk"
+            >
                 <input
                     :class="$style.input"
                     :name="data.pk"

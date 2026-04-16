@@ -15,7 +15,10 @@ const [twitchSocial, telegramSocial] = SOCIAL_LINKS
 <template>
     <div :class="$style.BentoHospitalGreeting">
         <div :class="$style.inner">
-            <img :class="$style.image" :src="MAINPAGE_IMAGE" />
+            <img
+                :class="$style.image"
+                :src="MAINPAGE_IMAGE"
+            />
 
             <div :class="$style.content">
                 <VButton
@@ -50,7 +53,10 @@ const [twitchSocial, telegramSocial] = SOCIAL_LINKS
                     </svg>
                 </VButton>
 
-                <div :class="$style.title" v-html="GREETING_TEXT" />
+                <div
+                    :class="$style.title"
+                    v-html="GREETING_TEXT"
+                />
             </div>
         </div>
 
@@ -87,7 +93,10 @@ const [twitchSocial, telegramSocial] = SOCIAL_LINKS
                 </svg>
             </VButton>
 
-            <div :class="$style.title" v-html="GREETING_TEXT_MOBILE" />
+            <div
+                :class="$style.title"
+                v-html="GREETING_TEXT_MOBILE"
+            />
         </div>
     </div>
 </template>

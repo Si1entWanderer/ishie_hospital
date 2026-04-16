@@ -15,11 +15,18 @@ withDefaults(
 
 <template>
     <div :class="$style.TextBlock">
-        <component :class="$style.title" :is="titleTag">
+        <component
+            :class="$style.title"
+            :is="titleTag"
+        >
             <div v-html="data.title" />
         </component>
 
-        <div v-if="data.description" :class="$style.description" v-html="data.description" />
+        <div
+            v-if="data.description"
+            :class="$style.description"
+            v-html="data.description"
+        />
     </div>
 </template>
 

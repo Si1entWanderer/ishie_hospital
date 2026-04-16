@@ -49,16 +49,27 @@ async function onShareClick() {
 
 <template>
     <div :class="$style.ActionsBlock">
-        <VButton :class="$style.button" tag="router-link" to="/patients">
+        <VButton
+            :class="$style.button"
+            tag="router-link"
+            to="/patients"
+        >
             {{ PATIENTS_BUTTON_TEXT }}
         </VButton>
 
-        <VButton :class="[$style.button, $style._mainpage]" tag="router-link" to="/">
+        <VButton
+            :class="[$style.button, $style._mainpage]"
+            tag="router-link"
+            to="/"
+        >
             {{ MAINPAGE_BUTTON_TEXT }}
         </VButton>
 
         <div :class="$style.actions">
-            <VIconButton :icon="EIcons.print" @click="onPrintClick" />
+            <VIconButton
+                :icon="EIcons.print"
+                @click="onPrintClick"
+            />
 
             <VIconButton
                 :icon="EIcons.share"
@@ -66,7 +77,10 @@ async function onShareClick() {
                 @click="onShareClick"
             />
 
-            <VNavigation @click-prev="emit('clickPrev')" @click-next="emit('clickNext')" />
+            <VNavigation
+                @click-prev="emit('clickPrev')"
+                @click-next="emit('clickNext')"
+            />
         </div>
     </div>
 </template>

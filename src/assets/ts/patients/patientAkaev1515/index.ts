@@ -15,4 +15,4 @@ const patientAkaev1515: IPatient = {
     registrationDate: 1772755200000,
 }
 
-export default patientAkaev1515;
+export default patientAkaev1515

@@ -14,8 +14,15 @@ const TITLE = 'СПИСОК ПАЦИЕНТОВ'
         </h2>
 
         <ul :class="$style.list">
-            <li v-for="patient in PATIENTS" :class="$style.item" :key="patient.id">
-                <PatientPreviewLink :data="patient" size="large" />
+            <li
+                v-for="patient in PATIENTS"
+                :class="$style.item"
+                :key="patient.id"
+            >
+                <PatientPreviewLink
+                    :data="patient"
+                    size="large"
+                />
             </li>
         </ul>
     </BlockWrapper>

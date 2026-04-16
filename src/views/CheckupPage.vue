@@ -95,15 +95,25 @@ onMounted(() => {
     <div :class="$style.CheckupPage">
         <div :class="[$style.container, 'container']">
             <div :class="$style.buttons">
-                <VButton :class="[$style.button, $style._back]" tag="router-link" to="/">
+                <VButton
+                    :class="[$style.button, $style._back]"
+                    tag="router-link"
+                    to="/"
+                >
                     {{ MAINPAGE_BUTTON_TEXT }}
                 </VButton>
 
-                <VButton :class="$style.button" @click="onClearClick">
+                <VButton
+                    :class="$style.button"
+                    @click="onClearClick"
+                >
                     {{ CLEAR_BUTTON_TEXT }}
                 </VButton>
 
-                <VButton :class="$style.button" @click="onDownloadClick">
+                <VButton
+                    :class="$style.button"
+                    @click="onDownloadClick"
+                >
                     {{ DOWNLOAD_BUTTON_TEXT }}
                 </VButton>
             </div>

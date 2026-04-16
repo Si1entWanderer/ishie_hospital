@@ -60,7 +60,10 @@ watch(
                 @click-prev="onClickPrev"
             />
 
-            <Transition name="fade" mode="out-in">
+            <Transition
+                name="fade"
+                mode="out-in"
+            >
                 <PatientCard
                     v-if="activePatient?.id"
                     :class="$style.patientCard"
@@ -69,7 +72,10 @@ watch(
                 />
             </Transition>
 
-            <Transition name="fade" mode="out-in">
+            <Transition
+                name="fade"
+                mode="out-in"
+            >
                 <PatientTherapyBlock
                     v-if="activePatient?.therapyMarks?.length"
                     :key="activePatient?.id"
