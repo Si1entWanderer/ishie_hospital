@@ -304,7 +304,7 @@
                 </ol>
             `},{id:6,title:"💞 VI. Уровень сердечной нагрузки",description:`
                 <p>Уровень MAX — Бьется Даже На Парковке</p>
-            `}],u1={id:"43434",name:"ecyc_j",image:l1,sex:Ee.male,birthDate:"9.01.2025",residentalAddress:"Twitch канал Ishie_j",examinations:[a1,c1],therapyMarks:[Z.pukaton2025,Z.streak100,Z.clip300,Z.donation3k],staffName:ri.iisus,registrationDate:17639424e5},d1="/assets/iwyryAvatar-R0duG8ln.jpg",f1=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
+            `}],u1={id:"43434",name:"ecyc_j",image:l1,sex:Ee.male,birthDate:"9.01.2025",residentalAddress:"Twitch канал Ishie_j",examinations:[a1,c1],therapyMarks:[Z.collector,Z.pukaton2025,Z.streak100,Z.roulette,Z.clip300,Z.donation3k],staffName:ri.iisus,registrationDate:17639424e5},d1="/assets/iwyryAvatar-R0duG8ln.jpg",f1=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
                 <p>Лёгкая влюблённость</p>
             `},{id:2,title:"💗 II. Основной диагноз",description:`
                 <p>Аритмия милоты (лёгкая степень)</p>
