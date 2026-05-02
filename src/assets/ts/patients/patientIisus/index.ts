@@ -15,8 +15,10 @@ const patientIisus: IPatient = {
     residentalAddress: 'Twitch канал Ishie_j',
     examinations: [examination1, examination2],
     therapyMarks: [
+        ETherapyMarksIds.collector,
         ETherapyMarksIds.pukaton2025,
         ETherapyMarksIds.streak100,
+        ETherapyMarksIds.roulette,
         ETherapyMarksIds.clip300,
         ETherapyMarksIds.donation3k,
     ],
