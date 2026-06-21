@@ -23,6 +23,7 @@ import patientSamr1na from '@/assets/ts/patients/patientSamr1na'
 import patientYounochkq from '@/assets/ts/patients/patientYounochkq'
 import patientYumekomoore from '@/assets/ts/patients/patientYumekomoore'
 import patientOlkash_o from '@/assets/ts/patients/patientOlkash_o'
+import patientPain_vin from '@/assets/ts/patients/patientPain_vin'
 
 export default [
     patientAlyooha,
@@ -50,4 +51,5 @@ export default [
     patientBOrealweiSS,
     patientFalaqq_j,
     patientOlkash_o,
+    patientPain_vin,
 ]

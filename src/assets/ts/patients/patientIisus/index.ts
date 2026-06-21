@@ -5,6 +5,7 @@ import iisusAvatar from '@/assets/images/avatars/iisus.jpg'
 import { STAFF_NAMES } from '@/assets/ts/constants'
 import examination1 from './examinations/examination1'
 import examination2 from './examinations/examination2'
+import examination3 from './examinations/examination3'
 
 const patientIisus: IPatient = {
     id: '43434',
@@ -13,7 +14,7 @@ const patientIisus: IPatient = {
     sex: ESex.male,
     birthDate: '9.01.2025',
     residentalAddress: 'Twitch канал Ishie_j',
-    examinations: [examination1, examination2],
+    examinations: [examination1, examination2, examination3],
     therapyMarks: [
         ETherapyMarksIds.collector,
         ETherapyMarksIds.pukaton2025,
