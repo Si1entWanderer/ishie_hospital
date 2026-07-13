@@ -10,7 +10,7 @@ const patientFullgir_77: IPatient = {
     image: fullgir_77Avatar,
     sex: ESex.male,
     birthDate: '6.12.2024',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.roulette],
     registrationDate: 1771891200000,

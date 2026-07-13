@@ -9,10 +9,10 @@ const patientAkaev1515: IPatient = {
     image: null,
     sex: ESex.male,
     birthDate: '9.12.2023',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.roulette],
     registrationDate: 1772755200000,
 }
 
-export default patientAkaev1515;
+export default patientAkaev1515

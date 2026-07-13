@@ -11,7 +11,7 @@ const patient: IPatient = {
     image: falaqq_jAvatar,
     sex: ESex.male,
     birthDate: '16.04.2025',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.streak100],
     registrationDate: 1776297600000,

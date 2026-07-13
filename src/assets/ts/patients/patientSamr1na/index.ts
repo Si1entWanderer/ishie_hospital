@@ -9,7 +9,7 @@ const patientSamr1na: IPatient = {
     image: null,
     sex: ESex.female,
     birthDate: '13.07.2023',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.pukaton2025],
     registrationDate: 1764720000000,

@@ -11,7 +11,7 @@ const patient: IPatient = {
     image: BOrealweissAvatar,
     sex: ESex.male,
     birthDate: '27.02.2026',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.roulette],
     registrationDate: 1776124800000,

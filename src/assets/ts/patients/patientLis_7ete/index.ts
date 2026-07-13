@@ -10,7 +10,7 @@ const patientLis_7ete: IPatient = {
     image: lis_7eteAvatar,
     sex: ESex.male,
     birthDate: '16.10.2025',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.pukaton2025],
     registrationDate: 1766620800000,

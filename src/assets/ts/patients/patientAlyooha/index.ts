@@ -12,7 +12,7 @@ const patientAlyooha: IPatient = {
     image: null,
     sex: ESex.male,
     birthDate: '11.05.2023',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1, examination2],
     therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.streak100],
     staffName: STAFF_NAMES.alyooha,
@@ -20,4 +20,4 @@ const patientAlyooha: IPatient = {
     registrationDate: 1763856000000,
 }
 
-export default patientAlyooha;
+export default patientAlyooha

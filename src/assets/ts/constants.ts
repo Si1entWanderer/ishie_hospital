@@ -11,24 +11,24 @@ import pukaton2025Image from '@/assets/images/rewards/pukaton.png'
 import raid100Image from '@/assets/images/rewards/raid.png'
 import streak100Image from '@/assets/images/rewards/streak.png'
 
-import frameEpicImage from '@/assets/images/frames/epic.png'
-import frameLegendaryImage from '@/assets/images/frames/legendary.png'
-import frameRareImage from '@/assets/images/frames/rare.png'
-import frameUncommonImage from '@/assets/images/frames/uncommon.png'
+import frameEpicImage from '@/assets/images/frames/epic_vior.png'
+import frameLegendaryImage from '@/assets/images/frames/legendary_vior.png'
+import frameRareImage from '@/assets/images/frames/rare_vior.png'
+import frameUncommonImage from '@/assets/images/frames/uncommon_vior.png'
 
 export const SOCIAL_LINKS = [
     {
         id: 1,
         name: 'Twitch',
         icon: EIcons.twitch,
-        href: '//www.twitch.tv/ishie_j',
+        href: 'www.twitch.tv/vior_j',
         fill: '#8956fb',
     },
     {
         id: 2,
         name: 'Telegram',
         icon: EIcons.telegram,
-        href: '//t.me/durdom_ishie_j',
+        href: 't.me/vior_j',
         fill: '#0088cc',
     },
 ]
@@ -304,7 +304,7 @@ export const FORM_FIELDS: TCheckboxGroupData[] = [
             },
             {
                 pk: '15',
-                label: 'Прослушивание ASMR от Иши 1 раз в день перед сном в течение недели',
+                label: 'Прослушивание ASMR от Виор 1 раз в день перед сном в течение недели',
             },
             {
                 pk: '16',
@@ -394,7 +394,7 @@ export const THERAPY_MARKS: ITherapyMark[] = [
         name: 'Пукатон 2025',
         grade: ETherapyMarksGrades.legendary,
         description:
-            'Терапия для первопроходцев в клинике Иши_j. Дается за получение статуса донатера дня во время Пукатона 2025',
+            'Терапия для первопроходцев в клинике. Дается за получение статуса донатера дня во время Пукатона 2025',
     },
     {
         id: ETherapyMarksIds.streak100,
@@ -458,7 +458,7 @@ export const TOKENS_PAGE_DATA: ITextBlock = {
     title: 'КАК ПОПАСТЬ НА&nbsp;ЛЕЧЕНИЕ?',
     description: `
             Чтобы попасть в&nbsp;клинику нужно получить
-            достижение на&nbsp;Twitch канале Ishie_j (<b>жетон&nbsp;терапии</b>)
+            достижение на&nbsp;Twitch канале vior_j (<b>жетон&nbsp;терапии</b>)
             Список доступных на&nbsp;данный момент достижений:
         `,
 }

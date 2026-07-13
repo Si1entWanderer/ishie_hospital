@@ -12,7 +12,7 @@ const patientNutvis: IPatient = {
     image: nutvisAvatar,
     sex: ESex.female,
     birthDate: '12.11.2023',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1, examination2],
     therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.clip300],
     staffName: STAFF_NAMES.nutvis,

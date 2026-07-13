@@ -1,11 +1,11 @@
-import type { IPatient } from '@/@types/patient';
-import { ESex, ETherapyMarksIds } from '@/assets/ts/enums';
+import type { IPatient } from '@/@types/patient'
+import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
 
-import MindBlownWhatAvatar from '@/assets/images/avatars/MindBlownWhatAvatar.jpg';
+import MindBlownWhatAvatar from '@/assets/images/avatars/MindBlownWhatAvatar.jpg'
 
-import examination1 from './examinations/examination1';
-import examination2 from './examinations/examination2';
-import examination3 from './examinations/examination3';
+import examination1 from './examinations/examination1'
+import examination2 from './examinations/examination2'
+import examination3 from './examinations/examination3'
 
 const patient: IPatient = {
     id: '38592',
@@ -13,11 +13,10 @@ const patient: IPatient = {
     image: MindBlownWhatAvatar,
     sex: ESex.male,
     birthDate: '20.03.2026',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1, examination2, examination3],
     therapyMarks: [ETherapyMarksIds.roulette],
     registrationDate: 1773964800000,
 }
 
-
-export default patient;
+export default patient

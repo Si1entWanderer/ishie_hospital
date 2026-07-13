@@ -41,7 +41,7 @@ export const RULES_DATA: ITextBlock[] = [
                     Бан на twitch-канале за нарушение <a href="${links.externalTwitchRules}" target="_blank">правил сообщества twitch</a>
                 </li>
                 <li>
-                    Бан в тг-канале/twitch-канале за нарушение <a href="${links.externalCommunityRules}" target="_blank">правил сообщества Ishie_j</a>
+                    Бан в тг-канале/twitch-канале за нарушение <a href="${links.externalCommunityRules}" target="_blank">правил сообщества vior_j</a>
                 </li>
                 <li>
                     Просьба пациента удалить самого себя
@@ -93,7 +93,7 @@ export const RULES_DATA: ITextBlock[] = [
         title: 'НАЗНАЧЕНИЕ ДОПОЛНИТЕЛЬНЫХ ОБСЛЕДОВАНИЙ',
         description: `
             <p>
-                По своему усмотрению Иши может провести вам дополнительное обследование.
+                По своему усмотрению Виор может провести вам дополнительное обследование.
                 В карточке пациента будут отображаться обновленные данные, предыдущие
                 можно будет найти на вкладке "Прошлые приемы"
             </p>

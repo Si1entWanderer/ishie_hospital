@@ -10,7 +10,7 @@ const patientMrblackwolf1k_j: IPatient = {
     image: mrblackwolf1kAvatar,
     sex: ESex.male,
     birthDate: '2.12.2024',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.streak100],
     registrationDate: 1772236800000,

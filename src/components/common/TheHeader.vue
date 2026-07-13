@@ -3,8 +3,8 @@ import { EIcons } from '@/assets/ts/enums'
 
 import SocialLinks from '@/components/social/SocialLinks.vue'
 
-const CLINIC_NAME = 'РБ(О)У «Клиника имени Иши_j»'
-const CLINIC_TITLE = 'Рофельное бюджетное(очень) учреждение «Клиника имени Иши_j»'
+const CLINIC_NAME = 'РБ(О)У «Клиника имени Виор_j»'
+const CLINIC_TITLE = 'Рофельное бюджетное(очень) учреждение «Клиника имени Виор_j»'
 const CLINIC_DESCRIPTION = 'Лечебное профилактическое учреждение'
 </script>
 

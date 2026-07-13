@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { EButtonStyles } from '@/@types/ui'
 
-import MAINPAGE_IMAGE from '@/assets/images/banner/mainpage-banner.jpg'
+import MAINPAGE_IMAGE from '@/assets/images/banner/mainpage-banner_vior.jpg'
 import { SOCIAL_LINKS } from '@/assets/ts/constants'
 import { EIcons } from '@/assets/ts/enums'
 
 import VButton from '@/components/ui/VButton.vue'
 
-const GREETING_TEXT = '💗 ДОБРО ПОЖАЛОВАТЬ В&nbsp;КЛИНИКУ ISHIE_J 💗'
-const GREETING_TEXT_MOBILE = '💗 ДОБРО ПОЖАЛОВАТЬ 💗<br/>В&nbsp;КЛИНИКУ ISHIE_J'
+const GREETING_TEXT = '🖤 ДОБРО ПОЖАЛОВАТЬ В&nbsp;КЛИНИКУ VIOR_J 🖤'
+const GREETING_TEXT_MOBILE = '🖤 ДОБРО ПОЖАЛОВАТЬ 🖤<br/>В&nbsp;КЛИНИКУ VIOR_J'
 const [twitchSocial, telegramSocial] = SOCIAL_LINKS
 </script>
 

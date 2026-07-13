@@ -11,7 +11,7 @@ export type TCheckupBlockEmit = {
     value: string
 }
 
-const TITLE = 'Чекап Иши_j'
+const TITLE = 'Чекап vior_j'
 const NAME_LABEL = 'Имя пациента:'
 
 defineProps<{
@@ -45,7 +45,7 @@ function onInput(event: Event) {
                 <input
                     :class="$style.input"
                     :value="nameValue"
-                    placeholder="ishie_j"
+                    placeholder="vior_j"
                     @input="onInput"
                     type="text"
                 />

@@ -12,7 +12,7 @@ const patientPitaHavus: IPatient = {
     image: pitaHavusAvatar,
     sex: ESex.male,
     birthDate: '30.03.2025',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1, examination2],
     therapyMarks: [
         ETherapyMarksIds.pukaton2025,

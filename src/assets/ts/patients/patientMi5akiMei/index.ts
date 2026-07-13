@@ -9,7 +9,7 @@ const patientMi5akiMei: IPatient = {
     image: null,
     sex: ESex.male,
     birthDate: '12.12.2024',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.pukaton2025],
     registrationDate: 1764460800000,

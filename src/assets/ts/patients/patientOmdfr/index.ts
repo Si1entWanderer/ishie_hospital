@@ -12,10 +12,10 @@ const patientOmdfr: IPatient = {
     image: omdfrAvatar,
     sex: ESex.male,
     birthDate: '2.03.2025',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1, examination2, examination3],
     therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.streak100],
     registrationDate: 1764288000000,
 }
 
-export default patientOmdfr;
+export default patientOmdfr

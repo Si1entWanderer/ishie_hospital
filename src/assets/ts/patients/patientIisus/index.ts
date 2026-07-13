@@ -13,7 +13,7 @@ const patientIisus: IPatient = {
     image: iisusAvatar,
     sex: ESex.male,
     birthDate: '9.01.2025',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1, examination2, examination3],
     therapyMarks: [
         ETherapyMarksIds.collector,

@@ -9,7 +9,7 @@ const patientDarkvels: IPatient = {
     image: null,
     sex: ESex.male,
     birthDate: '24.05.2025',
-    residentalAddress: 'Twitch канал Ishie_j',
+    residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.roulette],
     registrationDate: 1765065600000,
