@@ -14,7 +14,7 @@
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix --cache",
     "format": "prettier --write src/",
-    "deploy": "gh-pages -d dist --cname \"ishie-j.ru\""
+    "deploy": "gh-pages -d dist --cname \"vior-j.ru\""
   },
   "dependencies": {
     "date-fns": "^4.1.0",
