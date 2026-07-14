@@ -96,7 +96,7 @@ function onChecked(event: Event) {
     transition: 0.3s transform;
 
     &:after {
-        content: '💗';
+        content: '🖤';
         position: absolute;
         display: flex;
         justify-content: center;
@@ -107,7 +107,7 @@ function onChecked(event: Event) {
         height: 24px;
         font-size: 14px;
         line-height: 1;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, calc(-50% - 1px));
         transition: 0.3s opacity;
         opacity: 0;
     }

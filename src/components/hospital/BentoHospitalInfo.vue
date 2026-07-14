@@ -20,16 +20,16 @@ import BentoLastPatients from '@/components/patient/bento-blocks/BentoLastPatien
 
         <BentoBestPatients :class="[$style.bento, $style['_type-bestPatients']]" />
 
+        <BentoLinks
+            :class="[$style.bento, $style['_type-links'], $style['_width-full']]"
+            :links="LINKS_BLOCK"
+        />
+
         <BentoLastPatients :class="[$style.bento, $style['_type-lastPatients']]" />
 
         <BentoTextBlock
             :class="[$style.bento, $style['_type-aboutClinic'], $style['_width-wide']]"
             :blocks="[ABOUT_BLOCK]"
-        />
-
-        <BentoLinks
-            :class="[$style.bento, $style['_type-links'], $style['_width-full']]"
-            :links="LINKS_BLOCK"
         />
 
         <BentoTextBlock
