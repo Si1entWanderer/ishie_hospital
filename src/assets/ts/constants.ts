@@ -7,6 +7,7 @@ import views300Image from '@/assets/images/rewards/clip300.png'
 import collectorImage from '@/assets/images/rewards/collector.png'
 import donateOptionImage from '@/assets/images/rewards/donation.png'
 import rouletteImage from '@/assets/images/rewards/gamble.png'
+import streakNewImage from '@/assets/images/rewards/streak10.png'
 import pukaton2025Image from '@/assets/images/rewards/pukaton.png'
 import raid100Image from '@/assets/images/rewards/raid.png'
 import streak100Image from '@/assets/images/rewards/streak.png'
@@ -21,14 +22,14 @@ export const SOCIAL_LINKS = [
         id: 1,
         name: 'Twitch',
         icon: EIcons.twitch,
-        href: 'www.twitch.tv/vior_j',
+        href: 'https://www.twitch.tv/vior_j',
         fill: '#8956fb',
     },
     {
         id: 2,
         name: 'Telegram',
         icon: EIcons.telegram,
-        href: 't.me/vior_j',
+        href: 'https://t.me/vior_j',
         fill: '#0088cc',
     },
 ]
@@ -413,6 +414,14 @@ export const THERAPY_MARKS: ITherapyMark[] = [
             'Терапия для тех, кто приходит в компании друзей. Дается за рейд на канал от 100 человек',
     },
     {
+        id: ETherapyMarksIds.streakNew,
+        image: streakNewImage,
+        name: 'Старая фильмотерапия, новая палата',
+        grade: ETherapyMarksGrades.rare,
+        description:
+            'Терапия для тех, кто любит новое, но ценит старое. Дается за серию просмотров 10 на канале Виор, начиная с первого стрима',
+    },
+    {
         id: ETherapyMarksIds.roulette,
         image: rouletteImage,
         name: 'Сеанс лудомании',
@@ -448,6 +457,7 @@ export const ACTIVE_THERAPIES = [
     ETherapyMarksIds.collector,
     ETherapyMarksIds.streak100,
     ETherapyMarksIds.raid100,
+    ETherapyMarksIds.streakNew,
     ETherapyMarksIds.roulette,
     ETherapyMarksIds.clip300,
     ETherapyMarksIds.donation3k,

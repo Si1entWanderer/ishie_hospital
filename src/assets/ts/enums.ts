@@ -37,6 +37,7 @@ export enum ETherapyMarksIds {
     streak100 = 'streak',
     raid100 = 'raid',
     roulette = 'roulette',
+    streakNew = 'streak-new',
     clip300 = 'clip',
     donation3k = 'donation',
 }
