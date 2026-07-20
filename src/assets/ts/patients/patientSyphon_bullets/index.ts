@@ -1,12 +1,13 @@
 import type { IPatient } from '@/@types/patient'
 import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
+import syphonAvatar from '@/assets/images/avatars/syphon_bulletsAvatar.jpg'
 
 import examination1 from './examinations/examination1'
 
 const patient: IPatient = {
     id: '67443',
     name: 'syphon_bullets',
-    image: null,
+    image: syphonAvatar,
     sex: ESex.male,
     birthDate: '[ДАННЫЕ УДАЛЕНЫ]',
     residentalAddress: 'Twitch канал syphon_bullets',
