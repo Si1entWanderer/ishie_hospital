@@ -3,6 +3,7 @@ import { ESex, ETherapyMarksIds } from '@/assets/ts/enums'
 
 import examination1 from './examinations/examination1'
 import examination2 from './examinations/examination2'
+import examination3 from './examinations/examination3'
 
 import { STAFF_NAMES } from '@/assets/ts/constants'
 
@@ -13,8 +14,12 @@ const patientAlyooha: IPatient = {
     sex: ESex.male,
     birthDate: '11.05.2023',
     residentalAddress: 'Twitch канал vior_j',
-    examinations: [examination1, examination2],
-    therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.streak100],
+    examinations: [examination1, examination2, examination3],
+    therapyMarks: [
+        ETherapyMarksIds.pukaton2025,
+        ETherapyMarksIds.streak100,
+        ETherapyMarksIds.streakNew,
+    ],
     staffName: STAFF_NAMES.alyooha,
     staffExperience: '3 года',
     registrationDate: 1763856000000,

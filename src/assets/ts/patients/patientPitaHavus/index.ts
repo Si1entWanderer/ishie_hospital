@@ -5,6 +5,7 @@ import pitaHavusAvatar from '@/assets/images/avatars/pitaHavusAvatar.jpg'
 import { STAFF_NAMES } from '@/assets/ts/constants'
 import examination1 from './examinations/examination1'
 import examination2 from './examinations/examination2'
+import examination3 from './examinations/examination3'
 
 const patientPitaHavus: IPatient = {
     id: '83578',
@@ -13,10 +14,11 @@ const patientPitaHavus: IPatient = {
     sex: ESex.male,
     birthDate: '30.03.2025',
     residentalAddress: 'Twitch канал vior_j',
-    examinations: [examination1, examination2],
+    examinations: [examination1, examination2, examination3],
     therapyMarks: [
         ETherapyMarksIds.pukaton2025,
         ETherapyMarksIds.streak100,
+        ETherapyMarksIds.streakNew,
         ETherapyMarksIds.clip300,
         ETherapyMarksIds.roulette,
     ],

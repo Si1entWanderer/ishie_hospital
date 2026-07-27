@@ -13,7 +13,11 @@ const patientLis_7ete: IPatient = {
     birthDate: '16.10.2025',
     residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1, examination2],
-    therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.streak100],
+    therapyMarks: [
+        ETherapyMarksIds.pukaton2025,
+        ETherapyMarksIds.streak100,
+        ETherapyMarksIds.streakNew,
+    ],
     registrationDate: 1766620800000,
 }
 

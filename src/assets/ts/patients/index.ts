@@ -25,6 +25,16 @@ import patientYumekomoore from '@/assets/ts/patients/patientYumekomoore'
 import patientOlkash_o from '@/assets/ts/patients/patientOlkash_o'
 import patientPain_vin from '@/assets/ts/patients/patientPain_vin'
 import patientSyphon_bullets from '@/assets/ts/patients/patientSyphon_bullets'
+import patientSeksi_bomba_xl from '@/assets/ts/patients/patientSeksi_bomba_xl'
+import patientSerbim from '@/assets/ts/patients/patientSerbim'
+import patientTraveler_stars from '@/assets/ts/patients/patientTraveler_stars'
+import patientNeLikomSheet from '@/assets/ts/patients/patientNeLikomSheet'
+import patientFaraonpon1 from '@/assets/ts/patients/patientFaraonpon1'
+import patientBarsuk_nekromant from '@/assets/ts/patients/patientBarsuk_nekromant'
+import patientDmitry_adskov from '@/assets/ts/patients/patientDmitry_adskov'
+import patientBnezapno_Losb from '@/assets/ts/patients/patientBnezapno_Losb'
+import patientKinwiru from '@/assets/ts/patients/patientKinwiru'
+import patientMoshka_27 from '@/assets/ts/patients/patientMoshka_27'
 
 export default [
     patientAlyooha,
@@ -54,4 +64,14 @@ export default [
     patientOlkash_o,
     patientPain_vin,
     patientSyphon_bullets,
+    patientSeksi_bomba_xl,
+    patientSerbim,
+    patientTraveler_stars,
+    patientMoshka_27,
+    patientNeLikomSheet,
+    patientFaraonpon1,
+    patientBarsuk_nekromant,
+    patientDmitry_adskov,
+    patientKinwiru,
+    patientBnezapno_Losb,
 ]
