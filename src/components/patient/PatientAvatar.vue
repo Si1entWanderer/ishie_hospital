@@ -59,6 +59,7 @@ const isLoading = ref(true)
     height: auto;
     aspect-ratio: 1/1;
     color: $dark-0;
+    object-fit: cover;
 }
 
 .skeleton {

@@ -35,6 +35,7 @@ import patientDmitry_adskov from '@/assets/ts/patients/patientDmitry_adskov'
 import patientBnezapno_Losb from '@/assets/ts/patients/patientBnezapno_Losb'
 import patientKinwiru from '@/assets/ts/patients/patientKinwiru'
 import patientMoshka_27 from '@/assets/ts/patients/patientMoshka_27'
+import patientM_d_morton from '@/assets/ts/patients/patientM_d_morton'
 
 export default [
     patientAlyooha,
@@ -74,4 +75,5 @@ export default [
     patientDmitry_adskov,
     patientKinwiru,
     patientBnezapno_Losb,
+    patientM_d_morton,
 ]
