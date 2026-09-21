@@ -14,7 +14,11 @@ const patientNutvis: IPatient = {
     birthDate: '12.11.2023',
     residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1, examination2],
-    therapyMarks: [ETherapyMarksIds.pukaton2025, ETherapyMarksIds.clip300],
+    therapyMarks: [
+        ETherapyMarksIds.pukaton2025,
+        ETherapyMarksIds.clip300,
+        ETherapyMarksIds.donation3k,
+    ],
     staffName: STAFF_NAMES.nutvis,
     registrationDate: 1764115200000,
 }
