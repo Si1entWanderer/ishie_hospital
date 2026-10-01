@@ -13,7 +13,7 @@ const patient: IPatient = {
     birthDate: '4.07.2026',
     residentalAddress: 'Twitch канал vior_j',
     examinations: [examination1],
-    therapyMarks: [ETherapyMarksIds.streakNew],
+    therapyMarks: [ETherapyMarksIds.streakNew, ETherapyMarksIds.clip300],
     registrationDate: 1785196800000,
 }
 
