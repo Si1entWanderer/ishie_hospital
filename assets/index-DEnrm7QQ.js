@@ -1438,7 +1438,7 @@
                 </ol>
             `},{id:6,title:"💞 VI. Уровень сердечной нагрузки",description:`
                 <p>Уровень 3 — Ускоренная Симпатия</p>
-            `}],Ym={id:"54667",name:"m_d_morton",image:qm,sex:oe.male,birthDate:"4.07.2026",residentalAddress:"Twitch канал vior_j",examinations:[Um],therapyMarks:[D.streakNew,D.clip300],registrationDate:17851968e5},Xm="/assets/ZuckerpuppchenmdAvatar-B1PgPMDx.jpg",Km=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
+            `}],Ym={id:"54667",name:"m_d_morton",image:qm,sex:oe.male,birthDate:"4.07.2026",residentalAddress:"Twitch канал vior_j",examinations:[Um],therapyMarks:[D.streakNew,D.clip300],registrationDate:17851968e5},Xm="/assets/ZuckerpuppchenmdAvatar-DLMBwazc.jpg",Km=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
                 <p>Новичковый ритм</p>
             `},{id:2,title:"💗 II. Основной диагноз",description:`
                 <p>Доброкачественное увеличение любви</p>
