@@ -30,7 +30,7 @@ const dateAddedValue = computed(() => format(props.data?.registrationDate || 0, 
 
         <Transition name="fade">
             <div v-if="size === 'medium'" :class="$style.content">
-                <span :class="$style.name"> {{ data.name }}&nbsp;→ </span>
+                <span :class="$style.name"> {{ data.name }}&nbsp;</span>
             </div>
 
             <div v-else-if="size === 'large'" :class="$style.content">
