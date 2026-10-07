@@ -1409,7 +1409,7 @@
                 </ol>
             `},{id:6,title:"💞 VI. Уровень сердечной нагрузки",description:`
                 <p>Уровень MAX — Бьется Даже На Парковке</p>
-            `}],Wm={id:"83293",name:"Moshka_27",image:null,sex:oe.male,birthDate:"4.07.2026",residentalAddress:"Twitch канал vior_j",examinations:[Gm],therapyMarks:[D.streakNew],registrationDate:17851104e5},qm="/assets/m_d_mortonAvatar-DcihZo6D.jpg",Um=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
+            `}],Wm={id:"83293",name:"Moshka_27",image:null,sex:oe.male,birthDate:"4.07.2026",residentalAddress:"Twitch канал Moshka_27",examinations:[Gm],therapyMarks:[D.streakNew],registrationDate:17851104e5},qm="/assets/m_d_mortonAvatar-DcihZo6D.jpg",Um=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
                 <p>Пульсирующий актив</p>
             `},{id:2,title:"💗 II. Основной диагноз",description:`
                 <p>Доброкачественное увеличение любви</p>
