@@ -9,7 +9,7 @@ const patient: IPatient = {
     image: null,
     sex: ESex.male,
     birthDate: '4.07.2026',
-    residentalAddress: 'Twitch канал vior_j',
+    residentalAddress: 'Twitch канал Moshka_27',
     examinations: [examination1],
     therapyMarks: [ETherapyMarksIds.streakNew],
     registrationDate: 1785110400000,
