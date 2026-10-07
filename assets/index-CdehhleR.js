@@ -1466,7 +1466,7 @@
                 </ol>
             `},{id:6,title:"💞 VI. Уровень сердечной нагрузки",description:`
                 <p>Уровень 3 — Ускоренная Симпатия</p>
-            `}],Zm={id:"76736",name:"Zuckerpuppchenmd",image:Xm,sex:oe.female,birthDate:"7.10.2026",residentalAddress:"Twitch канал vior_j",examinations:[Km],therapyMarks:[D.donation3k],registrationDate:17913312e5},Qm=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
+            `}],Zm={id:"76736",name:"Zuckerpuppchenmd",image:Xm,sex:oe.female,birthDate:"7.10.2026",residentalAddress:"Twitch канал Zuckerpuppchenmd",examinations:[Km],therapyMarks:[D.donation3k],registrationDate:17913312e5},Qm=[{id:1,title:"❤️‍🔥 I.Возраст сердечка",description:`
                 <p>Лёгкая влюблённость</p>
             `},{id:2,title:"💗 II. Основной диагноз",description:`
                 <p>Аритмия милоты (лёгкая степень)</p>
