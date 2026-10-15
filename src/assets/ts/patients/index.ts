@@ -38,6 +38,7 @@ import patientMoshka_27 from '@/assets/ts/patients/patientMoshka_27'
 import patientM_d_morton from '@/assets/ts/patients/patientM_d_morton'
 import patientZuckerpuppchenmd from '@/assets/ts/patients/patientZuckerpuppchenmd'
 import patientTich1123567 from '@/assets/ts/patients/patientTich1123567'
+import patientMissMalina71 from '@/assets/ts/patients/patientMissMalina71'
 
 export default [
     patientAlyooha,
@@ -80,4 +81,5 @@ export default [
     patientM_d_morton,
     patientZuckerpuppchenmd,
     patientTich1123567,
+    patientMissMalina71,
 ]
